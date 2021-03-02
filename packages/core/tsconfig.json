@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["esnext", "DOM"],
+    "sourceMap": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules", "src/**/*.spec.tsx"]
+}

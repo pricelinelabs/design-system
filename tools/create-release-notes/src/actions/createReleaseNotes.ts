@@ -1,23 +1,20 @@
-import {
-  RushConfiguration,
-  RushConfigurationProject,
-} from '@microsoft/rush-lib'
+import {RushConfiguration, RushConfigurationProject,} from '@microsoft/rush-lib'
 import fs from 'fs'
-import { join } from 'path'
-import { Release, Change } from '../types/Release'
+import {join} from 'path'
+import {Change, Release} from '../types/Release'
 
 const config = RushConfiguration.loadFromDefaultLocation()
 
-const COMMIT_URL_STEM = 'https://github.com/priceline/design-system/commit/'
+// const COMMIT_URL_STEM = 'https://github.com/priceline/design-system/commit/'
 
 const _getChangelog = (project: RushConfigurationProject) => {
   const file = fs.readFileSync(join(project.projectFolder, 'CHANGELOG.json'))
   return JSON.parse(file.toString())
 }
 
-const _getCommitUrl = (commitHash: string): string => {
-  return `${COMMIT_URL_STEM}${commitHash}`
-}
+// const _getCommitUrl = (commitHash: string): string => {
+//   return `${COMMIT_URL_STEM}${commitHash}`
+// }
 
 const _parseAuthor = (author: string): { name; email? } => {
   const re = /([\w\s]+)(<?(.*)>)?$/
@@ -28,13 +25,13 @@ const _parseAuthor = (author: string): { name; email? } => {
   }
 }
 
-const _parseComment = (comment: string) => {
-  const re = /^.*(\w{3,4}-\d+).*$/
-  const matches = re.exec(comment)
-  return {
-    jiraId: matches ? matches[1] : '',
-  }
-}
+// const _parseComment = (comment: string) => {
+//   const re = /^.*(\w{3,4}-\d+).*$/
+//   const matches = re.exec(comment)
+//   return {
+//     jiraId: matches ? matches[1] : '',
+//   }
+// }
 
 const _formatChangeRow = (change: Change): string => {
   const author = _parseAuthor(change.author)
@@ -42,10 +39,8 @@ const _formatChangeRow = (change: Change): string => {
   let commitLink = ''
 
   if (change.commit) {
-    const commitHash = change.commit.slice(0, 8)
-
     // TODO figure out how to go to commit page without branch name
-    commitLink = commitHash
+    commitLink = change.commit.slice(0, 8)
   } else {
     commitLink = `n/a`
   }
@@ -53,6 +48,7 @@ const _formatChangeRow = (change: Change): string => {
   return `|${change.type}|${change.comment}|${authorName.trim()}|${commitLink}|`
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const _transformRushComments = (comments): Change[] => {
   return ['major', 'minor', 'patch', 'dependency'].reduce((acc, cur) => {
     if (!comments[cur]) return acc
@@ -77,7 +73,7 @@ ${notes.changes.map(_formatChangeRow).join('\n')}
 `
 }
 
-export const createReleaseNotes = (packageName): Release => {
+export const createReleaseNotes = (packageName: string): Release => {
   const project = config.getProjectByName(packageName)
 
   if (!project) {

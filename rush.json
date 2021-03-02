@@ -358,14 +358,14 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
+
+    // Published Design System packages
     {
       "packageName": "pcln-menu",
       "projectFolder": "packages/menu",
       "reviewCategory": "packages",
       "shouldPublish": true
     },
-
-    // Published Design System packages
     {
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
@@ -425,11 +425,6 @@
     {
       "packageName": "@priceline/create-release-notes",
       "projectFolder": "tools/create-release-notes",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "pcln-types",
-      "projectFolder": "tools/types",
       "shouldPublish": false
     }
   ]

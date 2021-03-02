@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 
 import { Box, Text } from '..'
 
@@ -9,27 +8,23 @@ const description =
 
 export default {
   title: 'Box',
-}
-
-export const LayoutComponent = withInfo({
-  text: description,
-  inline: true,
-})(() => <Box p={3}>Hello</Box>)
-
-LayoutComponent.story = {
-  name: 'Layout component',
   component: Box,
+  parameters: {
+    docs: {
+      description: {
+        component: description,
+      },
+    },
+  },
 }
+
+export const LayoutComponent = () => <Box p={3}>Hello</Box>
 
 export const DisplayAndSize = () => (
   <Box color='alert.base' display={['none', null, 'block']} p={3} size={250}>
     Hello
   </Box>
 )
-
-DisplayAndSize.story = {
-  name: 'Display and size',
-}
 
 export const Padding = () => <Box p={3}>Hello</Box>
 
@@ -40,7 +35,6 @@ export const Height = () => (
     width={[150, 250, 350, 450]}
   />
 )
-
 export const MaxAndMinValues = () => (
   <Box
     color='priceSecondary.base'
@@ -50,19 +44,12 @@ export const MaxAndMinValues = () => (
     minWidth={[300, null, 200, null, 100]}
   />
 )
-
-MaxAndMinValues.story = {
-  name: 'Max and min values',
-}
-
 export const Margin = () => <Box m={3}>Hello</Box>
-
 export const Color = () => (
   <Box p={3} color='primary.base'>
     Hello
   </Box>
 )
-
 export const BoxShadow = () => (
   <div>
     {['sm', 'md', 'lg', 'xl'].map((boxShadow) => (
@@ -78,11 +65,6 @@ export const BoxShadow = () => (
     ))}
   </div>
 )
-
-BoxShadow.story = {
-  name: 'Box shadow',
-}
-
 export const BackgroundColor = () => (
   <React.Fragment>
     <Box p={3} color='white' bg='blue'>
@@ -99,30 +81,23 @@ export const BackgroundColor = () => (
     </Box>
   </React.Fragment>
 )
-
 export const Size = () => <Box p={3} color='secondary.base' size={200} />
-
 export const Width = () => (
   <Box p={3} width={1 / 2} color='white' bg='blue'>
     Half Width
   </Box>
 )
-
 export const PixelWidth = () => (
   <Box p={3} width={256} color='white' bg='blue'>
     256px width
   </Box>
 )
 
-export const VwWidth = () => (
+export const VWWidth = () => (
   <Box p={3} width='50vw' color='white' bg='blue'>
     50vw width
   </Box>
 )
-
-VwWidth.story = {
-  name: 'VW Width',
-}
 
 export const DirectionalPadding = () => (
   <Box p={3}>
@@ -192,7 +167,4 @@ export const ThemeUserCaseColorText = () => (
     </Box>
   </React.Fragment>
 )
-
-ThemeUserCaseColorText.story = {
-  name: 'Theme user case: color=text',
-}
+ThemeUserCaseColorText.storyName = "Theme user case: color='text'"

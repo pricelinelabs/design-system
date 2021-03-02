@@ -1,6 +1,0 @@
-**/.rush/*
-**/node_modules/*
-
-**/coverage/*
-
-**/dist/*

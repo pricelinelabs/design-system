@@ -44,8 +44,8 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.7.0",
     "@rushstack/eslint-config": "^2.3.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "cross-env": "^7.0.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
@@ -64,8 +64,8 @@
   },
   "peerDependencies": {
     "pcln-design-system": "^4.5.0",
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0",
+    "react": "^16.10.0 || ^17.0.0",
+    "react-dom": "^16.10.0 || ^17.0.0",
     "styled-components": ">=4.4.1"
   }
 }

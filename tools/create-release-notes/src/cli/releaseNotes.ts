@@ -14,7 +14,7 @@ const config = RushConfiguration.loadFromDefaultLocation()
 console.log('Creating release notes...')
 
 if (packageName) {
-  const notes = createReleaseNotes(packageName)
+  const notes = createReleaseNotes(packageName as string)
 
   console.log('Creating release notes... SUCCESS')
 

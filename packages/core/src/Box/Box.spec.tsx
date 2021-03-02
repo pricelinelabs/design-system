@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { rendererCreateWithTheme } from '../../test/rendererCreateWithTheme'
 import { theme, Box } from '..'
 
 describe('Box', () => {

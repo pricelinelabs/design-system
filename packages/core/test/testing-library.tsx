@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { render } from '@testing-library/react'
+import { render, RenderResult } from '@testing-library/react'
 import { ThemeProvider } from '../src'
 
 const WithThemeProvider = ({ children }) => (
@@ -10,7 +10,9 @@ WithThemeProvider.propTypes = {
   children: PropTypes.node,
 }
 
-const customRender = (ui, options) =>
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const customRender = (ui: React.Node, options: any): RenderResult =>
   render(ui, { wrapper: WithThemeProvider, ...options })
 
 // re-export everything

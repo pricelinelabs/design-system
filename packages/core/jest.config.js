@@ -5,6 +5,6 @@ module.exports = {
   ],
   moduleDirectories: ['node_modules', 'test'],
   reporters: ['jest-standard-reporter'],
-  setupFilesAfterEnv: ['./test/jest.setup.js'],
+  setupFilesAfterEnv: ['./test/jest.setup.ts'],
   testMatch: ['<rootDir>/src/**/*.spec.js'],
 }

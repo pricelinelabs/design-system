@@ -23,11 +23,11 @@
   "scripts": {
     "prepare": "run-s clean build",
     "build": "run-s build:js build:types",
-    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs --extensions='.js,.ts,.tsx'",
+    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm --extensions='.js,.ts,.tsx'",
+    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es --extensions='.js,.ts,.tsx'",
+    "build:types": "tsc --emitDeclarationOnly",
     "build:js": "run-p build:babel:*",
-    "build:types": "mkdir -p ./dist/types && cp ../../tools/types/types/index.d.ts dist/types",
     "clean": "rimraf dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -73,7 +73,7 @@
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
     "moize": "^5.4.7",
-    "pcln-icons": "4.0.1-holiday-2020.1",
+    "pcln-icons": "^4.0.1-holiday-2020.1",
     "prop-types": "^15.7.2",
     "styled-system": "^4.2.4"
   },
@@ -83,11 +83,10 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-config": "^2.3.1",
-    "@storybook/addon-actions": "^5.3.21",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/react": "^5.3.21",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
+    "@storybook/addon-actions": "^6.1.8",
+    "@storybook/react": "^6.1.8",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "@testing-library/react-hooks": "^3.4.2",
     "camelcase": "^6.0.0",
     "cross-env": "^7.0.2",
@@ -101,10 +100,13 @@
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "styled-components": "^4.4.1",
-    "stylis": "^3.5.4"
+    "stylis": "^3.5.4",
+    "@types/jest": "^26.0.15",
+    "@types/react-test-renderer": "^16.9.4",
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
-    "react": "^16.10.0",
+    "react": "^16.10.0 || ^17.0.0",
     "react-dom": "^16.10.0",
     "styled-components": ">=4.4.1"
   }

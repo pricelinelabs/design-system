@@ -12,15 +12,7 @@ module.exports = {
     rendererCreateWithTheme: 'writeable',
   },
   plugins: defaultPlugins,
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-      modules: true,
-    },
-  },
+  parser: '@typescript-eslint/parser',
   reportUnusedDisableDirectives: true,
   rules: {
     // Import
@@ -50,6 +42,17 @@ module.exports = {
       files: ['testing-library.js'],
       rules: {
         'import/export': 'off',
+      },
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      plugins: [...defaultPlugins, '@typescript-eslint'],
+      extends: [...defaultExtends, 'plugin:@typescript-eslint/recommended'],
+    },
+    {
+      files: ['*.stories.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
   ],
