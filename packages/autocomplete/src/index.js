@@ -5,12 +5,11 @@ import styled from 'styled-components'
 import {
   Flex,
   Card,
-  deprecatedPropType,
   Label as PclnLabel,
   Input as PclnInput,
   getPaletteColor,
 } from 'pcln-design-system'
-import { themeGet } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 export const AutocompleteContext = React.createContext()
 
@@ -53,7 +52,7 @@ MenuCard.defaultProps = {
 }
 
 MenuCard.propTypes = {
-  bg: deprecatedPropType('color'),
+  color: PropTypes.string,
 }
 
 const MenuRoot = React.forwardRef((props, ref) => (

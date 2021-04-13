@@ -8,24 +8,20 @@ export default {
 
 export const DefaultAlignWithThemeMaxWidth = () => (
   <Container>
-    <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
+    <Box p={4} color='background.light' style={{ height: `100vh` }}>
       Container Compnent
     </Box>
   </Container>
 )
 
-DefaultAlignWithThemeMaxWidth.story = {
-  name: 'Default align with theme max width',
-}
+DefaultAlignWithThemeMaxWidth.storyName = 'Default align with theme max width'
 
 export const InputMaxWidth = () => (
   <Container maxWidth={500}>
-    <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
+    <Box p={4} color='background.light' style={{ height: `100vh` }}>
       Container Compnent
     </Box>
   </Container>
 )
 
-InputMaxWidth.story = {
-  name: 'Input maxWidth',
-}
+InputMaxWidth.storyName = 'Input maxWidth'

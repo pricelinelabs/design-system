@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, fontSize, themeGet } from 'styled-system'
+import { space, fontSize } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
 
 import { borders, deprecatedColorValue } from '../utils'
 import { Flex } from '../Flex'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
@@ -36,8 +39,8 @@ SelectBase.defaultProps = {
 }
 
 SelectBase.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   color: deprecatedColorValue(),
   ...borders.propTypes,
 }

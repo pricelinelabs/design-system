@@ -12,12 +12,12 @@ export const Grid = () => (
   <Box p={4}>
     <Flex wrap mx={-3}>
       <Box width={[1, 1 / 2]} px={3} mb={4}>
-        <Box bg='background.light'>
+        <Box color='background.light'>
           <Text>Hello</Text>
         </Box>
       </Box>
       <Box width={[1, 1 / 2]} px={3} mb={4}>
-        <Box bg='background.light'>
+        <Box color='background.light'>
           <Text>Hello</Text>
         </Box>
       </Box>
@@ -29,7 +29,7 @@ export const TwoColumn = () => (
   <Flex>
     <Box px={3} width={1 / 4}>
       <Box
-        bg='background.light'
+        color='background.light'
         style={{
           minHeight: '50vh',
         }}
@@ -39,7 +39,7 @@ export const TwoColumn = () => (
     </Box>
     <Box px={3} width={3 / 4}>
       <Box
-        bg='background.light'
+        color='background.light'
         style={{
           minHeight: '50vh',
         }}
@@ -50,9 +50,7 @@ export const TwoColumn = () => (
   </Flex>
 )
 
-TwoColumn.story = {
-  name: 'Two-column',
-}
+TwoColumn.storyName = 'Two-column'
 
 export const Navbar = () => (
   <Flex p={2} alignItems='center' color='primary'>

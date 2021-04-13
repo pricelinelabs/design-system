@@ -47,9 +47,7 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'
 
 export const WithExternalLabel = () => (
   <Box width={400}>
@@ -60,9 +58,7 @@ export const WithExternalLabel = () => (
   </Box>
 )
 
-WithExternalLabel.story = {
-  name: 'With external label',
-}
+WithExternalLabel.storyName = 'With external label'
 
 export const GroupedInputs = () => (
   <InputGroup>

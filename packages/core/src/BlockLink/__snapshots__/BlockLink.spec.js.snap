@@ -6,10 +6,6 @@ exports[`BlockLink renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068EF;
-  display: block;
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c0:hover {
@@ -18,8 +14,15 @@ exports[`BlockLink renders 1`] = `
   text-decoration: underline;
 }
 
+.c1 {
+  display: block;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <a
-  className="c0"
+  className="c0 c1"
   color="primary"
   rel={null}
   size="medium"

@@ -70,13 +70,11 @@ export const A11Y = () => (
   </Box>
 )
 
-A11Y.story = {
-  name: 'a11y',
-}
+A11Y.storyName = 'a11y'
 
 export const AlignedWithText = () => (
   <Flex alignItems='center'>
-    {<icons.WarningOutline/>}
+    {<icons.WarningOutline />}
     <Text ml={1}>Leapin&apos; lizards!</Text>
   </Flex>
 )

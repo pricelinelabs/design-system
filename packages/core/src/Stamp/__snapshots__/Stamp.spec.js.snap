@@ -34,10 +34,10 @@ exports[`Stamp bg blue sets background color 1`] = `
   color: #4f6f8f;
   border-color: #c0cad5;
   background-color: #0068EF;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -85,11 +85,10 @@ exports[`Stamp borderColor green sets border color 1`] = `
   min-height: 24px;
   color: #4f6f8f;
   border-color: #0a0;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -137,11 +136,10 @@ exports[`Stamp color blue sets text and icon color 1`] = `
   min-height: 24px;
   color: #0068EF;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -189,11 +187,10 @@ exports[`Stamp color gray sets text and icon color 1`] = `
   min-height: 24px;
   color: #4f6f8f;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -241,11 +238,10 @@ exports[`Stamp color green sets text and icon color 1`] = `
   min-height: 24px;
   color: #0a0;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -293,11 +289,10 @@ exports[`Stamp color orange sets text and icon color 1`] = `
   min-height: 24px;
   color: #f68013;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -345,11 +340,10 @@ exports[`Stamp color purple sets text and icon color 1`] = `
   min-height: 24px;
   color: #70b;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -397,11 +391,10 @@ exports[`Stamp color red sets text and icon color 1`] = `
   min-height: 24px;
   color: #c00;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -449,11 +442,10 @@ exports[`Stamp has default borderGray border color 1`] = `
   min-height: 24px;
   color: #4f6f8f;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -501,11 +493,10 @@ exports[`Stamp renders 1`] = `
   min-height: 24px;
   color: #4f6f8f;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -554,10 +545,10 @@ exports[`Stamp renders medium fill 1`] = `
   color: #fff;
   background-color: #4f6f8f;
   border-color: #4f6f8f;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -601,10 +592,10 @@ exports[`Stamp renders small fill 1`] = `
   color: #fff;
   background-color: #4f6f8f;
   border-color: #4f6f8f;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {
@@ -647,11 +638,10 @@ exports[`Stamp renders small size 1`] = `
   min-height: 20px;
   color: #4f6f8f;
   border-color: #c0cad5;
-  background-color: #f4f6f8;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c0 > svg {

@@ -1,12 +1,18 @@
 import styled from 'styled-components'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
 } from '../utils'
-import { space, width, borderColor } from 'styled-system'
+import { space, width } from 'styled-system'
 
-const Divider = styled.hr`
+const Divider = styled.hr.attrs(({ mx, mr, ml }) => ({
+  // Default mr and ml props shouldn't interfere with mx
+  mr: mx && mr === 0 ? null : mr,
+  ml: mx && ml === 0 ? null : ml,
+}))`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -27,9 +33,9 @@ Divider.defaultProps = {
 }
 
 Divider.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  ...borderColor.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.layout, ['width']),
+  ...pick(propTypes.border, ['borderColor']),
   color: deprecatedColorValue(),
 }
 

@@ -1,58 +1,63 @@
-module.exports = () => ({
-  presets: [
-    [
-      require('@babel/preset-env'),
-      {
-        modules: false,
-        useBuiltIns: 'entry',
-        corejs: 3,
-      },
+module.exports = () => {
+  return {
+    presets: [
+      [
+        '@babel/preset-env',
+        {
+          modules: false,
+          useBuiltIns: 'entry',
+          corejs: 3,
+        },
+      ],
+      '@babel/preset-react',
+      [
+        '@babel/preset-typescript',
+        {
+          isTSX: true,
+          allExtensions: true,
+        },
+      ],
     ],
-    require('@babel/preset-react'),
-    [
-      require('@babel/preset-typescript'),
-      {
-        isTSX: true,
-        allExtensions: true,
-      },
+    plugins: [
+      'babel-plugin-styled-components',
+      '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-proposal-nullish-coalescing-operator',
+      '@babel/plugin-proposal-optional-chaining',
+      '@babel/plugin-syntax-dynamic-import',
+      '@babel/plugin-proposal-export-default-from',
+      'babel-plugin-lodash',
+      'babel-plugin-date-fns',
     ],
-  ],
-  plugins: [
-    require('babel-plugin-styled-components'),
-    require('@babel/plugin-proposal-class-properties'),
-    require('@babel/plugin-proposal-nullish-coalescing-operator'),
-    require('@babel/plugin-proposal-optional-chaining'),
-    require('@babel/plugin-syntax-dynamic-import'),
-    require('@babel/plugin-proposal-export-default-from'),
-    require('babel-plugin-lodash'),
-    require('babel-plugin-date-fns'),
-  ],
-  env: {
-    test: {
-      presets: [
-        [
-          require('@babel/preset-env'),
-          {
-            targets: {
-              node: 'current',
+    env: {
+      test: {
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              targets: {
+                node: 'current',
+              },
             },
-          },
+          ],
         ],
-      ],
-      plugins: [
-        require('babel-plugin-styled-components'),
-        require('@babel/plugin-proposal-nullish-coalescing-operator'),
-        require('@babel/plugin-proposal-optional-chaining'),
-        require('babel-plugin-dynamic-import-node'),
-        require('@babel/plugin-transform-modules-commonjs'),
-      ],
-      compact: true,
+        plugins: [
+          [
+            'babel-plugin-styled-components',
+            { ssr: false, displayName: false },
+          ],
+          '@babel/plugin-proposal-nullish-coalescing-operator',
+          '@babel/plugin-proposal-optional-chaining',
+          'babel-plugin-dynamic-import-node',
+          '@babel/plugin-transform-modules-commonjs',
+        ],
+        compact: true,
+      },
+      production: {
+        plugins: ['babel-plugin-transform-react-remove-prop-types'],
+      },
+      cjs: {
+        presets: [['@babel/preset-env', { modules: 'cjs' }]],
+      },
     },
-    production: {
-      plugins: [require('babel-plugin-transform-react-remove-prop-types')],
-    },
-    cjs: {
-      presets: [[require('@babel/preset-env'), { modules: 'cjs' }]],
-    },
-  },
-})
+  }
+}

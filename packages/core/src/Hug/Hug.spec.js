@@ -22,7 +22,7 @@ describe('Hug', () => {
   test('renders text, icon, and Child', () => {
     const json = rendererCreateWithTheme(
       <Hug icon={<ThumbsUp />} text={text}>
-        <Card p={3} bg='white' color='text'>
+        <Card p={3} color='text'>
           I‘m a card within a hug!
         </Card>
       </Hug>
@@ -36,7 +36,7 @@ describe('Hug', () => {
         icon={<ThumbsUp />}
         text="I've been known to hug a card from time to time"
       >
-        <Card p={3} bg='white' color='text'>
+        <Card p={3} color='text'>
           I‘m a card within a hug!
         </Card>
       </Hug>
@@ -47,7 +47,7 @@ describe('Hug', () => {
   test('renders text when array of nodes is provided', () => {
     const json = rendererCreateWithTheme(
       <Hug icon={<ThumbsUp />} text={[text, text]}>
-        <Card p={3} bg='white' color='text'>
+        <Card p={3} color='text'>
           I‘m a card within a hug!
         </Card>
       </Hug>

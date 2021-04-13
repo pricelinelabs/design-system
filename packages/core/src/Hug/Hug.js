@@ -24,7 +24,7 @@ const BorderConcealer = styled(Box)`
 `
 
 // eslint-disable-next-line react/prop-types
-const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
+const Hug = ({ color, p, fontSize, icon, iconDisplay, ...props }) => {
   let iconClone
 
   if (React.isValidElement(icon)) {
@@ -38,8 +38,8 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
   }
 
   return (
-    <HugCard {...props} borderColor={bg || color}>
-      <Flex bg={bg} color={color} p={p} alignItems='center'>
+    <HugCard {...props} borderColor={color}>
+      <Flex color={color} p={p} alignItems='center'>
         {!!iconClone && iconClone}
         <Text fontSize={fontSize}>{props.text}</Text>
       </Flex>

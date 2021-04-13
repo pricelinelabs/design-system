@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, width } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import {
   applyVariations,
   getPaletteColor,
@@ -30,10 +32,6 @@ const Label = styled.label`
   width: 100%;
   margin: 0;
   color: ${getPaletteColor('base')};
-  ${(props) =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
 
   ${applyVariations('Label')}
   ${space} ${fontSize} ${fontWeight} ${width};
@@ -42,11 +40,10 @@ const Label = styled.label`
 `
 
 Label.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize', 'fontWeight']),
+  ...pick(propTypes.layout, ['width']),
   color: deprecatedColorValue(),
-  ...fontWeight.propTypes,
-  ...width.propTypes,
 }
 
 Label.defaultProps = {

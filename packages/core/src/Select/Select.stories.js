@@ -23,9 +23,7 @@ export const Default = () => (
   </Box>
 )
 
-Default.story = {
-  name: 'default',
-}
+Default.storyName = 'default'
 
 export const LongOptionString = () => (
   <Box width={[1, 320]}>
@@ -38,9 +36,7 @@ export const LongOptionString = () => (
   </Box>
 )
 
-LongOptionString.story = {
-  name: 'long option string',
-}
+LongOptionString.storyName = 'long option string'
 
 export const HiddenLabel = () => (
   <Box width={[1, 320]}>
@@ -56,9 +52,7 @@ export const HiddenLabel = () => (
   </Box>
 )
 
-HiddenLabel.story = {
-  name: 'hidden label',
-}
+HiddenLabel.storyName = 'hidden label'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -78,6 +72,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

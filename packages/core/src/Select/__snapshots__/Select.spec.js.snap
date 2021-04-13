@@ -3,6 +3,9 @@
 exports[`Select renders 1`] = `
 .c0 {
   width: 100%;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,7 +16,7 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -23,12 +26,15 @@ exports[`Select renders 1`] = `
   color: #4f6f8f;
 }
 
-.c3 {
+.c4 {
   outline: none;
+}
+
+.c5 {
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -42,35 +48,39 @@ exports[`Select renders 1`] = `
   border-style: solid;
   border-color: #c0cad5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-size: 16px;
 }
 
-.c1:focus {
+.c2:focus {
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
 }
 
-.c1::-ms-expand {
+.c2::-ms-expand {
   display: none;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
-  .c1 {
+  .c2 {
     font-size: 14px;
   }
 }
 
 <div
-  className="c0"
+  className="c0 c1"
   width={1}
 >
   <select
-    className="c1"
+    className="c2"
     fontSize={
       Array [
         2,
@@ -81,7 +91,7 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c3 c4 c5"
     color="text.light"
     fill="currentcolor"
     focusable={false}

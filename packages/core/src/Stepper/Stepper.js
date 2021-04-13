@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { themeGet } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
 import { Step } from '../Step'
@@ -27,6 +27,7 @@ Stepper.Step = Step
 Stepper.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
+  ...Flex.propTypes,
 }
 
 Stepper.defaultProps = {

@@ -75,9 +75,7 @@ export const WithSmallModalHeader = () => (
   />
 )
 
-WithSmallModalHeader.story = {
-  name: 'With SmallModalHeader',
-}
+WithSmallModalHeader.storyName = 'With SmallModalHeader'
 
 // export const WithModalHeaderAndScrollLock = () => {
 //   // Generate content to demonstrate a scrollable <body>
@@ -116,7 +114,7 @@ export const WithOverflow = () => (
 
 export const WithImagemodeAndColorful = () => (
   <ModalStory
-    bg='orange'
+    color='alert.base'
     header={<SmallModalHeader />}
     width={['100px', '200px', '500px']}
     imgMode
@@ -124,9 +122,7 @@ export const WithImagemodeAndColorful = () => (
   />
 )
 
-WithImagemodeAndColorful.story = {
-  name: 'With imagemode and colorful',
-}
+WithImagemodeAndColorful.storyName = 'With imagemode and colorful'
 
 export const WithCustomAnimation = () => (
   <ModalStory
@@ -137,9 +133,7 @@ export const WithCustomAnimation = () => (
   />
 )
 
-WithCustomAnimation.story = {
-  name: 'With custom animation',
-}
+WithCustomAnimation.storyName = 'With custom animation'
 
 export const ZeroTimeout = () => (
   <ModalStory

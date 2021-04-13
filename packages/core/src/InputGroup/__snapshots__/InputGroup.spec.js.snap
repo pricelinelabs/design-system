@@ -14,9 +14,10 @@ exports[`InputGroup renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
+  border-color: #c0cad5;
 }
 
-border-color:#c0cad5 .c1 > .c2 {
+.c1 > .sc-bdfBwQ {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;

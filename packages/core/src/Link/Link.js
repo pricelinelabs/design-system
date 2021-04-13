@@ -8,6 +8,8 @@ import {
   getPaletteColor,
   deprecatedColorValue,
 } from '../utils'
+import pick from 'lodash.pick'
+import propTypes from '@styled-system/prop-types'
 
 const variations = {
   fill: css`
@@ -55,6 +57,8 @@ Link.defaultProps = {
 
 Link.propTypes = {
   color: deprecatedColorValue(),
+  ...pick(propTypes.layout, ['width']),
+  ...propTypes.space,
   variation: PropTypes.oneOf(Object.keys(variations)),
 }
 

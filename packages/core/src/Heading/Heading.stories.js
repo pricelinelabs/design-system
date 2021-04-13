@@ -31,9 +31,7 @@ export const UsingDotNotationWithH1H6 = () => (
   </section>
 )
 
-UsingDotNotationWithH1H6.story = {
-  name: 'Using dot-notation with h1-h6',
-}
+UsingDotNotationWithH1H6.storyName = 'Using dot-notation with h1-h6'
 
 export const WithTextShadows = () => (
   <section>
@@ -60,6 +58,4 @@ export const UsingTextProps = () => (
   </section>
 )
 
-UsingTextProps.story = {
-  name: 'Using <Text> props',
-}
+UsingTextProps.storyName = 'Using <Text> props'

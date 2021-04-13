@@ -26,9 +26,7 @@ export const WithIcon = () => (
   </FormField>
 )
 
-WithIcon.story = {
-  name: 'with Icon',
-}
+WithIcon.storyName = 'with Icon'
 
 export const DynamicLabel = () => (
   <Flex>
@@ -68,9 +66,7 @@ export const DynamicLabel = () => (
   </Flex>
 )
 
-DynamicLabel.story = {
-  name: 'dynamic label',
-}
+DynamicLabel.storyName = 'dynamic label'
 
 export const DynamicLabelWithValue = () => (
   <FormField>
@@ -84,9 +80,7 @@ export const DynamicLabelWithValue = () => (
   </FormField>
 )
 
-DynamicLabelWithValue.story = {
-  name: 'dynamic label with value',
-}
+DynamicLabelWithValue.storyName = 'dynamic label with value'
 
 export const IconToTheRight = () => (
   <FormField>
@@ -101,9 +95,7 @@ export const IconToTheRight = () => (
   </FormField>
 )
 
-IconToTheRight.story = {
-  name: 'Icon to the right',
-}
+IconToTheRight.storyName = 'Icon to the right'
 
 export const WithSelect = () => (
   <FormField>
@@ -116,9 +108,7 @@ export const WithSelect = () => (
   </FormField>
 )
 
-WithSelect.story = {
-  name: 'with Select',
-}
+WithSelect.storyName = 'with Select'
 
 export const WithSuccessfulValidation = () => (
   <FormField>
@@ -133,9 +123,7 @@ export const WithSuccessfulValidation = () => (
   </FormField>
 )
 
-WithSuccessfulValidation.story = {
-  name: 'with successful validation',
-}
+WithSuccessfulValidation.storyName = 'with successful validation'
 
 export const WithErrorTooltip = () => (
   <Box>
@@ -156,6 +144,4 @@ export const WithErrorTooltip = () => (
   </Box>
 )
 
-WithErrorTooltip.story = {
-  name: 'with error Tooltip',
-}
+WithErrorTooltip.storyName = 'with error Tooltip'

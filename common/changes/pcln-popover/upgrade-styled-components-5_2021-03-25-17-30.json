@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade to Styled Components 5 as devDependency",
+      "type": "patch",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "craig.palermo@priceline.com"
+}

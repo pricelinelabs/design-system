@@ -6,7 +6,6 @@ import {
   createTheme,
   decomposeColor,
   deprecatedColorValue,
-  deprecatedPropType,
   getBreakpointSize,
   getByPalette,
   getContrastRatio,
@@ -18,30 +17,6 @@ import {
 } from '.'
 
 describe('utils', () => {
-  describe('deprecatedPropType', () => {
-    test('returns an error when using a deprecated prop', () => {
-      const err = deprecatedPropType('newProp')(
-        {
-          oldProp: true,
-        },
-        'oldProp',
-        'Component'
-      )
-      expect(err).toBeTruthy()
-    })
-
-    test('returns undefined when using a valid prop', () => {
-      const err = deprecatedPropType('newProp')(
-        {
-          newProp: true,
-        },
-        'oldProp',
-        'Component'
-      )
-      expect(err).toBeUndefined()
-    })
-  })
-
   describe('deprecatedColorValue', () => {
     test('returns an error when when using a deprecated color prop value', () => {
       expect(
@@ -109,8 +84,12 @@ describe('utils', () => {
 
   describe('getContrastRatio', () => {
     test('returns the contrast ratio between two colors', () => {
-      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(4.2265248376519144)
-      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(4.968620984531288)
+      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(
+        4.2265248376519144
+      )
+      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(
+        4.968620984531288
+      )
     })
   })
 
@@ -258,12 +237,11 @@ describe('utils', () => {
 
     test('returns empty string if missing props', () => {
       expect(color({})).toEqual('')
-      expect(color({ color: 'primary', bg: 'background' })).toEqual('')
-      expect(color({ bg: 'background' })).toEqual('')
+      expect(color({ color: 'primary' })).toEqual('')
     })
 
     test('returns the correct style', () => {
-      expect(color({ ...props, bg: 'background' })).toEqual(
+      expect(color({ ...props, color: 'background' })).toEqual(
         expect.arrayContaining([
           'background-color:',
           props.theme.palette.background.base,
@@ -288,15 +266,6 @@ describe('utils', () => {
           ';',
         ])
       )
-      expect(color({ ...props, bg: 'background', color: 'primary' })).toEqual(
-        expect.arrayContaining([
-          'background-color:',
-          props.theme.palette.background.base,
-          ';color:',
-          props.theme.palette.primary.base,
-          ';',
-        ])
-      )
 
       // legacy support
       expect(color({ ...props, color: 'text' })).toEqual(
@@ -304,15 +273,6 @@ describe('utils', () => {
       )
       expect(color({ ...props, color: 'blue' })).toEqual(
         expect.arrayContaining(['color:', props.theme.colors.blue, ';'])
-      )
-      expect(color({ ...props, color: 'blue', bg: 'green' })).toEqual(
-        expect.arrayContaining([
-          'background-color:',
-          props.theme.colors.green,
-          ';color:',
-          props.theme.colors.blue,
-          ';',
-        ])
       )
     })
   })

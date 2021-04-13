@@ -77,6 +77,4 @@ export const ForwardRefsToLinks = () => (
   />
 )
 
-ForwardRefsToLinks.story = {
-  name: 'Forward refs to links',
-}
+ForwardRefsToLinks.storyName = 'Forward refs to links'

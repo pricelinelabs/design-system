@@ -61,25 +61,48 @@ export const CustomBackgroundAndBorderColor = () => (
   </div>
 )
 
-CustomBackgroundAndBorderColor.story = {
-  name: 'Custom Background and Border Color',
-}
+CustomBackgroundAndBorderColor.storyName = 'Custom Background and Border Color'
 
 export const CustomTextSize = () => (
   <div>
-    <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
+    <Stamp
+      color='background.lightest'
+      bg='primary'
+      borderColor='primary'
+      mr={2}
+    >
       <Text fontSize={0}>Yorkie</Text>
     </Stamp>
-    <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
+    <Stamp
+      color='background.lightest'
+      bg='primary'
+      borderColor='primary'
+      mr={2}
+    >
       <Text fontSize={1}>Jack Russell</Text>
     </Stamp>
-    <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
+    <Stamp
+      color='background.lightest'
+      bg='primary'
+      borderColor='primary'
+      mr={2}
+    >
       <Text fontSize={2}>Golden Retriever</Text>
     </Stamp>
-    <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
+    <Stamp
+      color='background.lightest'
+      bg='primary'
+      borderColor='primary'
+      mr={2}
+    >
       <Text fontSize={3}>Doberman</Text>
     </Stamp>
-    <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
+    <Stamp
+      color='background.lightest'
+      bg='primary'
+      borderColor='primary'
+      mr={2}
+    >
       <Text fontSize={4}>Malamute</Text>
     </Stamp>
   </div>
@@ -114,6 +137,4 @@ export const PassAnArrayOfSizes = () => (
   </div>
 )
 
-PassAnArrayOfSizes.story = {
-  name: 'Pass an array of sizes',
-}
+PassAnArrayOfSizes.storyName = 'Pass an array of sizes'

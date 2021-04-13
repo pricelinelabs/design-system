@@ -7,6 +7,9 @@ exports[`RatingBadge renders 1`] = `
   padding-right: 8px;
   background-color: #f68013;
   color: #fff;
+}
+
+.c2 {
   display: inline-block;
   line-height: 1.5;
   font-weight: 700;
@@ -27,7 +30,7 @@ exports[`RatingBadge renders 1`] = `
     class="c0"
   >
     <div
-      class="c1"
+      class="c1 c2"
       color="alert"
       font-weight="bold"
     >

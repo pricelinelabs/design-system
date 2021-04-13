@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Remove deprecated props",
+      "type": "major",
+      "packageName": "pcln-design-system"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "craig.palermo@priceline.com"
+}

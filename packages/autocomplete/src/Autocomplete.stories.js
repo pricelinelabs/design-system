@@ -65,9 +65,7 @@ export const Default = () => (
   />
 )
 
-Default.story = {
-  name: 'default',
-}
+Default.storyName = 'default'
 
 export const Themed = () => (
   <ThemeProvider theme={kayakTheme}>
@@ -104,6 +102,4 @@ export const Themed = () => (
   </ThemeProvider>
 )
 
-Themed.story = {
-  name: 'themed',
-}
+Themed.storyName = 'themed'

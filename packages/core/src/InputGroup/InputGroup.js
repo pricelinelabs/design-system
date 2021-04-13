@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { space, themeGet } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import { space } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 import { Box } from '../Box'
 import { getPaletteColor } from '../utils'
@@ -11,8 +13,9 @@ const InputGroup = styled.div`
   border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)}
-    ${space} & > ${Box} {
+  border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)};
+
+  ${space} & > ${Box} {
     width: 100%;
     flex: 1 1 auto;
   }
@@ -24,7 +27,7 @@ const InputGroup = styled.div`
 `
 
 InputGroup.propTypes = {
-  ...space.propTypes,
+  ...propTypes.space,
   borderColor: PropTypes.string,
 }
 

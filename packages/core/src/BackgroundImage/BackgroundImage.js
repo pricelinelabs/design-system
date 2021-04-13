@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, height } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import { applyVariations, getPaletteColor } from '../utils'
 
 const variations = {
@@ -29,8 +31,7 @@ BackgroundImage.defaultProps = {
 }
 
 BackgroundImage.propTypes = {
-  ...height.propTypes,
-  ...width.propTypes,
+  ...pick(propTypes, ['width', 'height']),
   /** background-image url */
   image: PropTypes.string,
   variation: PropTypes.oneOf(Object.keys(variations)),

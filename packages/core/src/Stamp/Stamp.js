@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize } from 'styled-system'
+import { space, fontSize } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
+import { themeGet } from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const sizes = {
@@ -46,12 +48,6 @@ const variations = {
     background-color: ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
   `,
-  // todo: remove this copy of the fill variation in v4 as its name does not follow conventions
-  solid: css`
-    color: ${getTextColorOn('base')};
-    background-color: ${getPaletteColor('base')};
-    border-color: ${getPaletteColor('base')};
-  `,
 }
 
 const Stamp = styled.div`
@@ -74,15 +70,15 @@ const Stamp = styled.div`
 Stamp.displayName = 'Stamp'
 
 Stamp.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   size: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(sizes)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
   ]),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   borderColor: deprecatedColorValue(),
 }
 
@@ -90,7 +86,6 @@ Stamp.defaultProps = {
   px: 1,
   py: 0,
   color: 'border.light',
-  bg: 'background.light',
   borderColor: 'border.base',
   size: 'medium',
   variation: 'outline',

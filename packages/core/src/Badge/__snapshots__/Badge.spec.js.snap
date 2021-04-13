@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge bg blue sets background-color and color 1`] = `
+exports[`Badge color alert sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -18,187 +18,88 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #0068EF;
-  color: #fff;
-  background-color: #0068EF;
-}
-
-<div
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Badge bg green sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #0a0;
-  color: #fff;
-  background-color: #0a0;
-}
-
-<div
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Badge bg lightBlue sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #e8f2ff;
-  color: #049;
-  background-color: #e8f2ff;
-}
-
-<div
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Badge bg lightGreen sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #ecf7ec;
-  color: #060;
-  background-color: #ecf7ec;
-}
-
-<div
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Badge bg lightRed sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: #fbebeb;
-  color: #800;
-  background-color: #fbebeb;
-}
-
-<div
-  className="c0"
-  size="medium"
-/>
-`;
-
-exports[`Badge bg orange sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
   background-color: #f68013;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  color="alert"
+  size="medium"
+/>
+`;
+
+exports[`Badge color error sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  color="error"
+  size="medium"
+/>
+`;
+
+exports[`Badge color error.light sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #fbebeb;
   color: #001833;
-  background-color: #f68013;
 }
 
 <div
   className="c0"
+  color="error.light"
   size="medium"
 />
 `;
 
-exports[`Badge bg red sets background-color and color 1`] = `
+exports[`Badge color primary sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -216,22 +117,22 @@ exports[`Badge bg red sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #c00;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0068EF;
   color: #fff;
-  background-color: #c00;
 }
 
 <div
   className="c0"
+  color="primary"
   size="medium"
 />
 `;
 
-exports[`Badge can escape preset: bg lightBlue sets background-color and color text sets color 1`] = `
+exports[`Badge color primary.light sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -249,22 +150,22 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: #e8f2ff;
   color: #001833;
 }
 
 <div
   className="c0"
-  color="text"
+  color="primary.light"
   size="medium"
 />
 `;
 
-exports[`Badge non-preset: bg text sets background-color and color white sets color 1`] = `
+exports[`Badge color secondary sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -282,17 +183,50 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #001833;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0a0;
   color: #fff;
 }
 
 <div
   className="c0"
-  color="white"
+  color="secondary"
+  size="medium"
+/>
+`;
+
+exports[`Badge color secondary.light sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #ecf7ec;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  color="secondary.light"
   size="medium"
 />
 `;
@@ -315,16 +249,17 @@ exports[`Badge renders 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f4f6f8;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #001833;
+  background-color: #f4f6f8;
 }
 
 <div
   className="c0"
+  color="text"
   size="medium"
 />
 `;
@@ -342,16 +277,17 @@ exports[`Badge renders small 1`] = `
   font-weight: 700;
   line-height: 1.4;
   line-height: 1.25;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f4f6f8;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #001833;
+  background-color: #f4f6f8;
 }
 
 <div
   className="c0"
+  color="text"
   size="small"
 />
 `;

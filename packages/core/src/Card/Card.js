@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 
 import { Box } from '../Box'
 import {
@@ -22,7 +24,7 @@ const Card = styled(Box)`
 `
 
 Card.propTypes = {
-  ...borderRadius.propTypes,
+  ...pick(propTypes.border, ['borderRadius']),
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
   borderWidth: PropTypes.oneOf([0, 1, 2]),

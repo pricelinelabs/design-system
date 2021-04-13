@@ -8,10 +8,10 @@ export default {
 
 export const Basic = () => (
   <Flex alignItems='center'>
-    <Box width={1 / 2} p={3} color='white' bg='blue'>
+    <Box width={1 / 2} p={3} color='primary'>
       Flex
     </Box>
-    <Box width={1 / 2} p={1} color='white' bg='green'>
+    <Box width={1 / 2} p={1} color='secondary'>
       Box
     </Box>
   </Flex>
@@ -19,10 +19,10 @@ export const Basic = () => (
 
 export const Wrap = () => (
   <Flex flexWrap='wrap'>
-    <Box width={[1, 1 / 2]} p={3} color='white' bg='blue'>
+    <Box width={[1, 1 / 2]} p={3} color='primary'>
       Flex
     </Box>
-    <Box width={[1, 1 / 2]} p={1} color='white' bg='green'>
+    <Box width={[1, 1 / 2]} p={1} color='secondary'>
       Wrap
     </Box>
   </Flex>
@@ -30,41 +30,11 @@ export const Wrap = () => (
 
 export const Justify = () => (
   <Flex justifyContent='space-around'>
-    <Box width={1 / 3} p={2} color='white' bg='blue'>
+    <Box width={1 / 3} p={2} color='primary'>
       Flex
     </Box>
-    <Box width={1 / 3} p={2} color='white' bg='green'>
+    <Box width={1 / 3} p={2} color='secondary'>
       Justify
     </Box>
   </Flex>
 )
-
-export const DeprecatedAlignShim = () => (
-  <Flex align='center'>
-    <Box width={1 / 2} p={3} color='white' bg='blue'>
-      Flex
-    </Box>
-    <Box width={1 / 2} p={1} color='white' bg='green'>
-      Box
-    </Box>
-  </Flex>
-)
-
-DeprecatedAlignShim.story = {
-  name: 'deprecated align shim',
-}
-
-export const DeprecatedBgShim = () => (
-  <Flex bg='blue'>
-    <Box width={1 / 2} p={3} color='white' bg='blue'>
-      Flex
-    </Box>
-    <Box width={1 / 2} p={1} color='white' bg='green'>
-      Box
-    </Box>
-  </Flex>
-)
-
-DeprecatedBgShim.story = {
-  name: 'deprecated bg shim',
-}

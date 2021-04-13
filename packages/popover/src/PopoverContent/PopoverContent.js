@@ -2,14 +2,9 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
-import { themeGet } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 import { Popper } from 'react-popper'
-import {
-  Box,
-  getPaletteColor,
-  deprecatedPropType,
-  ThemeProvider,
-} from 'pcln-design-system'
+import { Box, getPaletteColor, ThemeProvider } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
@@ -196,7 +191,6 @@ PopoverContent.propTypes = {
   className: PropTypes.string,
   p: PropTypes.number,
   color: PropTypes.string,
-  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,

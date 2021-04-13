@@ -37,9 +37,7 @@ export const OverAnImage = () => (
   </Relative>
 )
 
-OverAnImage.story = {
-  name: 'Over an image',
-}
+OverAnImage.storyName = 'Over an image'
 
 export const PositioningAnIcon = () => (
   <Card m={2}>
@@ -59,9 +57,7 @@ export const PositioningAnIcon = () => (
   </Card>
 )
 
-PositioningAnIcon.story = {
-  name: 'Positioning an icon',
-}
+PositioningAnIcon.storyName = 'Positioning an icon'
 
 export const MultipleAbsolutelyPositionedBoxes = () => (
   <TallCard pb={3}>
@@ -72,7 +68,7 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
         right={0}
         zIndex={1}
         width={400}
-        bg='#085397'
+        color='primary'
       >
         <Text.span fontSize={1} bold>
           z-index 1
@@ -84,7 +80,7 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
         right={0}
         zIndex={2}
         width={300}
-        bg='#f2633a'
+        color='alert'
       >
         <Text.span fontSize={1} bold>
           z-index 2
@@ -96,7 +92,7 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
         right={0}
         zIndex={3}
         width={200}
-        bg='#0a84c1'
+        color='primary.light'
       >
         <Text.span fontSize={1} bold>
           z-index 3
@@ -108,7 +104,7 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
         right={0}
         zIndex='4'
         width={100}
-        bg='#3c910e'
+        color='secondary'
       >
         <Text.span fontSize={1} bold>
           z-index 4
@@ -118,6 +114,5 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
   </TallCard>
 )
 
-MultipleAbsolutelyPositionedBoxes.story = {
-  name: 'Multiple absolutely positioned boxes',
-}
+MultipleAbsolutelyPositionedBoxes.storyName =
+  'Multiple absolutely positioned boxes'

@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { space, fontSize } from 'styled-system'
 import { Close } from 'pcln-icons'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
@@ -50,8 +51,8 @@ const FilterChip = ({
 FilterChip.displayName = 'FilterChip'
 
 FilterChip.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   id: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,

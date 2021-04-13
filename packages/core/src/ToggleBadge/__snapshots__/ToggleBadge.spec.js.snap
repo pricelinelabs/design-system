@@ -10,14 +10,14 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   cursor: pointer;
   background-color: #e8f2ff;
   color: #0068EF;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   font-size: 12px;
 }
 
@@ -33,39 +33,6 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 />
 `;
 
-exports[`ToggleBadge selected one with background-color and text color passed as props hover state 1`] = `
-.c0 {
-  border-radius: 2px;
-  border: 0;
-  display: inline-block;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  background-color: #0a0;
-  color: #c00;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 14px;
-}
-
-.c0:hover {
-  background-color: #0a0;
-}
-
-<button
-  className="c0"
-  color="red"
-  fontSize={1}
-  selected={true}
-/>
-`;
-
 exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 .c0 {
   border-radius: 2px;
@@ -76,14 +43,14 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   cursor: pointer;
   background-color: transparent;
   color: #0068EF;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   font-size: 12px;
 }
 

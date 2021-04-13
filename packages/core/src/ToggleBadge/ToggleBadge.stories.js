@@ -27,9 +27,8 @@ export const UnselectedWithDifferentBackgroundColor = () => (
   <ToggleBadge unSelectedBg='yellow'>Un - Selected - Badge</ToggleBadge>
 )
 
-UnselectedWithDifferentBackgroundColor.story = {
-  name: 'Unselected with different background color',
-}
+UnselectedWithDifferentBackgroundColor.storyName =
+  'Unselected with different background color'
 
 export const AGroup = () => (
   <div>
@@ -39,9 +38,7 @@ export const AGroup = () => (
   </div>
 )
 
-AGroup.story = {
-  name: 'A group',
-}
+AGroup.storyName = 'A group'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -60,6 +57,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

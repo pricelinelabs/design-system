@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
-import { deprecatedPropType } from 'pcln-design-system'
 
 import PopoverContent from '../PopoverContent'
 
@@ -101,7 +100,6 @@ Popover.propTypes = {
   className: PropTypes.string,
   p: PropTypes.number,
   color: PropTypes.string,
-  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,

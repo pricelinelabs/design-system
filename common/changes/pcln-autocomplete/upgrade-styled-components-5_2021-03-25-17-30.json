@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade to Styled Components 5 as devDependency",
+      "type": "patch",
+      "packageName": "pcln-autocomplete"
+    }
+  ],
+  "packageName": "pcln-autocomplete",
+  "email": "craig.palermo@priceline.com"
+}

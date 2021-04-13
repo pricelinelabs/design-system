@@ -18,9 +18,6 @@ export const Default = () => (
   />
 )
 
-Default.story = {
-  name: 'default',
-}
 
 export const WithColor = () => (
   <IconButton
@@ -29,9 +26,6 @@ export const WithColor = () => (
   />
 )
 
-WithColor.story = {
-  name: 'with color',
-}
 
 export const WithSize = () => (
   <IconButton
@@ -40,9 +34,7 @@ export const WithSize = () => (
   />
 )
 
-WithSize.story = {
-  name: 'with size',
-}
+WithSize.storyName = 'with size'
 
 export const WithDisabled = () => (
   <IconButton
@@ -52,9 +44,7 @@ export const WithDisabled = () => (
   />
 )
 
-WithDisabled.story = {
-  name: 'with disabled',
-}
+WithDisabled.storyName = 'with disabled'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -74,6 +64,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

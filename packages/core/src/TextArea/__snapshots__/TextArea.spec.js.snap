@@ -74,8 +74,8 @@ exports[`TextArea it renders an input element with a really large padding and ma
   padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
-  margin: 32px;
   padding: 32px;
+  margin: 32px;
 }
 
 .c0::-webkit-input-placeholder {

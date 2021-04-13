@@ -20,9 +20,7 @@ export const IconAndInput = () => (
   </IconField>
 )
 
-IconAndInput.story = {
-  name: 'Icon and Input',
-}
+IconAndInput.storyName = 'Icon and Input'
 
 export const InputAndIcon = () => (
   <IconField>
@@ -31,9 +29,7 @@ export const InputAndIcon = () => (
   </IconField>
 )
 
-InputAndIcon.story = {
-  name: 'Input and Icon',
-}
+InputAndIcon.storyName = 'Input and Icon'
 
 export const InputWithMultipleIcons = () => (
   <IconField>
@@ -45,9 +41,7 @@ export const InputWithMultipleIcons = () => (
   </IconField>
 )
 
-InputWithMultipleIcons.story = {
-  name: 'Input with multiple Icons',
-}
+InputWithMultipleIcons.storyName = 'Input with multiple Icons'
 
 export const InputAndIconButton = () => (
   <IconField>
@@ -62,9 +56,7 @@ export const InputAndIconButton = () => (
   </IconField>
 )
 
-InputAndIconButton.story = {
-  name: 'Input and Icon Button',
-}
+InputAndIconButton.storyName = 'Input and Icon Button'
 
 export const IconInputAndIcon = () => (
   <IconField>
@@ -74,9 +66,7 @@ export const IconInputAndIcon = () => (
   </IconField>
 )
 
-IconInputAndIcon.story = {
-  name: 'Icon, Input, and Icon',
-}
+IconInputAndIcon.storyName = 'Icon, Input, and Icon'
 
 export const IconInputAndIconButton = () => (
   <IconField>
@@ -92,9 +82,7 @@ export const IconInputAndIconButton = () => (
   </IconField>
 )
 
-IconInputAndIconButton.story = {
-  name: 'Icon, Input and Icon Button',
-}
+IconInputAndIconButton.storyName = 'Icon, Input and Icon Button'
 
 export const IconAndSelect = () => (
   <IconField>
@@ -106,6 +94,4 @@ export const IconAndSelect = () => (
   </IconField>
 )
 
-IconAndSelect.story = {
-  name: 'Icon and Select',
-}
+IconAndSelect.storyName = 'Icon and Select'

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade to Styled System 5",
+      "type": "major",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "craig.palermo@priceline.com"
+}

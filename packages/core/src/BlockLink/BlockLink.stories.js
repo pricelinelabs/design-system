@@ -25,9 +25,7 @@ export const ContainingBackgroundImage = () => (
   </Flex>
 )
 
-ContainingBackgroundImage.story = {
-  name: 'containing BackgroundImage',
-}
+ContainingBackgroundImage.storyName = 'containing BackgroundImage'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -49,9 +47,7 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'
 
 export const CompositionWithoutContainer = () => (
   <Flex justifyContent='center' alignItems='center' color='purple'>
@@ -63,6 +59,4 @@ export const CompositionWithoutContainer = () => (
   </Flex>
 )
 
-CompositionWithoutContainer.story = {
-  name: 'composition without container',
-}
+CompositionWithoutContainer.storyName = 'composition without container'

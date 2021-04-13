@@ -15,41 +15,41 @@ import { CloseButton } from '../CloseButton'
 import {
   applyVariations,
   deprecatedColorValue,
-  deprecatedPropType,
+  getPaletteColor,
 } from '../utils'
 
 const bannerColors = {
-  green: {
+  secondary: {
     backgroundColor: 'secondary.base',
     color: 'text.lightest',
     icon: <SuccessIcon />,
   },
-  lightGreen: {
+  'secondary.light': {
     backgroundColor: 'secondary.light',
     color: 'secondary.dark',
     icon: <SuccessIcon />,
   },
-  red: {
+  error: {
     backgroundColor: 'error.base',
     color: 'text.lightest',
     icon: <WarningIcon />,
   },
-  lightRed: {
+  'error.light': {
     backgroundColor: 'error.light',
     color: 'error.dark',
     icon: <WarningIcon />,
   },
-  orange: {
+  alert: {
     backgroundColor: 'alert.base',
     color: 'text.lightest',
     icon: <AttentionIcon />,
   },
-  blue: {
+  primary: {
     backgroundColor: 'primary.base',
     color: 'text.lightest',
     icon: <InformationIcon />,
   },
-  lightBlue: {
+  'primary.light': {
     backgroundColor: 'primary.light',
     color: 'primary.dark',
     icon: <InformationIcon />,
@@ -58,13 +58,18 @@ const bannerColors = {
 
 const StyledBox = styled(Box)`
   ${applyVariations('Banner')}
+  ${(props) =>
+    props.backgroundColor
+      ? `background-color: ${getPaletteColor(props.backgroundColor)(props)};`
+      : ''}
+  ${(props) =>
+    props.backgroundColor
+      ? `color: ${getPaletteColor(props.color)(props)};`
+      : ''}
 `
 
 const Banner = (props) => {
-  const bannerColor =
-    bannerColors[
-      !props.bg && props.color === 'green' ? props.color : props.bg
-    ] || {}
+  const bannerColor = bannerColors[props.color] || {}
   const Icon = props.icon || bannerColor.icon
   const color = !bannerColor.color ? props.color : bannerColor.color
 
@@ -81,7 +86,7 @@ const Banner = (props) => {
   return (
     <StyledBox
       {...props}
-      bg={bannerColor.backgroundColor || props.bg}
+      backgroundColor={bannerColor.backgroundColor}
       color={color}
     >
       <Flex justifyContent='space-between' alignItems='flex-start'>
@@ -115,16 +120,15 @@ Banner.propTypes = {
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  textAlign: PropTypes.string,
+  textAlign: Box.propTypes.textAlign,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   children: PropTypes.node,
 }
 
 Banner.defaultProps = {
   textAlign: 'left',
   showIcon: true,
-  color: 'green',
+  color: 'secondary',
 }
 
 export default withTheme(Banner)

@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import { ChevronDown } from 'pcln-icons'
 import { ChipContent } from '../ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
@@ -63,8 +64,8 @@ const ButtonChip = ({
 ButtonChip.displayName = 'ButtonChip'
 
 ButtonChip.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   id: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,

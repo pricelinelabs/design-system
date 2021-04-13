@@ -19,41 +19,18 @@ export const Default = () => (
 export const Colors = () => (
   <Box p={3}>
     <Card pb={3}>
-      <Flag width={192} mt={2} bg='orange'>
-        <b>Hello</b> Orange
+      <Flag width={192} mt={2} color='alert'>
+        <b>Hello</b> alert
       </Flag>
-      <Flag mt={3} bg='blue'>
-        Hello Blue
+      <Flag mt={3} color='primary'>
+        Hello primary
       </Flag>
-      <Flag mt={3} bg='purple'>
-        Hello Purple
-      </Flag>
-    </Card>
-  </Box>
-)
-
-export const WithCustomHexBgColor = () => (
-  <Box p={3}>
-    <Card pb={3}>
-      <Flag width={192} mt={2} bg='#085397'>
-        <b>Hello</b> #085397
-      </Flag>
-      <Flag width={192} mt={2} bg='#f2633a'>
-        <b>Hello</b> #f2633a
-      </Flag>
-      <Flag width={192} mt={2} bg='#0a84c1'>
-        <b>Hello</b> #0a84c1
-      </Flag>
-      <Flag width={192} mt={2} bg='#3c910e'>
-        <b>Hello</b> #3c910e
+      <Flag mt={3} color='promoPrimary'>
+        Hello promoPrimary
       </Flag>
     </Card>
   </Box>
 )
-
-WithCustomHexBgColor.story = {
-  name: 'with custom hex bg color',
-}
 
 export const CompensatingFor1PxBorder = () => (
   <Box p={3}>
@@ -65,9 +42,7 @@ export const CompensatingFor1PxBorder = () => (
   </Box>
 )
 
-CompensatingFor1PxBorder.story = {
-  name: 'Compensating for 1px border',
-}
+CompensatingFor1PxBorder.storyName = 'Compensating for 1px border'
 
 export const WrappedText = () => (
   <Box p={3}>
@@ -81,9 +56,7 @@ export const WrappedText = () => (
   </Box>
 )
 
-WrappedText.story = {
-  name: 'Wrapped text',
-}
+WrappedText.storyName = 'Wrapped text'
 
 export const WithIcon = () => (
   <Box p={3}>
@@ -110,6 +83,4 @@ export const WithCustomPadding = () => (
   </Box>
 )
 
-WithCustomPadding.story = {
-  name: 'With custom padding',
-}
+WithCustomPadding.storyName = 'With custom padding'

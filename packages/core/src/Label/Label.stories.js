@@ -28,9 +28,7 @@ export const UsingFontSize = () => (
   </div>
 )
 
-UsingFontSize.story = {
-  name: 'Using fontSize',
-}
+UsingFontSize.storyName = 'Using fontSize'
 
 export const Spacing = () => (
   <div>
@@ -48,9 +46,7 @@ export const Color = () => (
   </div>
 )
 
-Color.story = {
-  name: 'color',
-}
+Color.storyName = 'color'
 
 export const HtmlFor = () => (
   <div>
@@ -64,9 +60,7 @@ export const HtmlFor = () => (
   </div>
 )
 
-HtmlFor.story = {
-  name: 'htmlFor',
-}
+HtmlFor.storyName = 'htmlFor'
 
 export const Nowrap = () => (
   <Flex>
@@ -85,9 +79,7 @@ export const Nowrap = () => (
   </Flex>
 )
 
-Nowrap.story = {
-  name: 'nowrap',
-}
+Nowrap.storyName = 'nowrap'
 
 export const Width = () => (
   <div>
@@ -101,6 +93,4 @@ export const Width = () => (
   </div>
 )
 
-Width.story = {
-  name: 'width',
-}
+Width.storyName = 'width'

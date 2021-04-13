@@ -13,9 +13,7 @@ export const WithClickHandler = () => (
   <CloseButton color='background.darkest' onClick={action('clicked')} />
 )
 
-WithClickHandler.story = {
-  name: 'with click handler',
-}
+WithClickHandler.storyName = 'with click handler'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -35,6 +33,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

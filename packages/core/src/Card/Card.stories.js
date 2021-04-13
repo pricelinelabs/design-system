@@ -13,8 +13,7 @@ export const BoxShadowsWithDefaultBorder = () => (
       m={4}
       p={4}
       width={1 / 2}
-      color='black'
-      bg='white'
+      color='text'
       borderWidth={1}
     >
       Small Shadow
@@ -25,7 +24,6 @@ export const BoxShadowsWithDefaultBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={1}
     >
       Medium Shadow
@@ -36,7 +34,6 @@ export const BoxShadowsWithDefaultBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={1}
     >
       Large Shadow
@@ -47,7 +44,6 @@ export const BoxShadowsWithDefaultBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={1}
     >
       XLarge Shadow
@@ -55,9 +51,7 @@ export const BoxShadowsWithDefaultBorder = () => (
   </Box>
 )
 
-BoxShadowsWithDefaultBorder.story = {
-  name: 'Box Shadows with default border',
-}
+BoxShadowsWithDefaultBorder.storyName = 'Box Shadows with default border'
 
 export const BoxShadowsWithFocused2PxBorder = () => (
   <Box>
@@ -67,7 +61,6 @@ export const BoxShadowsWithFocused2PxBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={2}
     >
       Small Shadow
@@ -78,7 +71,6 @@ export const BoxShadowsWithFocused2PxBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={2}
     >
       Medium Shadow
@@ -89,7 +81,6 @@ export const BoxShadowsWithFocused2PxBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={2}
     >
       Large Shadow
@@ -100,7 +91,6 @@ export const BoxShadowsWithFocused2PxBorder = () => (
       p={4}
       width={1 / 2}
       color='text'
-      bg='white'
       borderWidth={2}
     >
       XLarge Shadow
@@ -108,9 +98,7 @@ export const BoxShadowsWithFocused2PxBorder = () => (
   </Box>
 )
 
-BoxShadowsWithFocused2PxBorder.story = {
-  name: 'Box Shadows with focused 2px border',
-}
+BoxShadowsWithFocused2PxBorder.storyName = 'Box Shadows with focused 2px border'
 
 export const BoxShadowsWithVaryingBorderRadii = () => (
   <Box>
@@ -119,8 +107,7 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
       m={4}
       p={4}
       width={1 / 2}
-      color='black'
-      bg='white'
+      color='text'
       borderRadius={0}
     >
       Small Shadow - 0px
@@ -130,8 +117,7 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
       m={4}
       p={4}
       width={1 / 2}
-      color='black'
-      bg='white'
+      color='text'
       borderRadius={10}
     >
       Medium Shadow - 10px
@@ -141,8 +127,7 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
       m={4}
       p={4}
       width={1 / 2}
-      color='black'
-      bg='white'
+      color='text'
       borderRadius={20}
     >
       Large Shadow - 20px
@@ -152,8 +137,7 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
       m={4}
       p={4}
       width={1 / 2}
-      color='black'
-      bg='white'
+      color='text'
       borderRadius='30px'
     >
       XLarge Shadow - 30px
@@ -161,6 +145,5 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
   </Box>
 )
 
-BoxShadowsWithVaryingBorderRadii.story = {
-  name: 'Box Shadows with varying border radii',
-}
+BoxShadowsWithVaryingBorderRadii.storyName =
+  'Box Shadows with varying border radii'

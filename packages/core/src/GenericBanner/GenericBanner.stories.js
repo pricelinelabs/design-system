@@ -47,12 +47,12 @@ export const basicBannerAllInlineRightIcon = () => (
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base'>
+      <Text.span color='text'>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Nunc at lacus vel dolor fringilla rhoncus.
       </Text.span>
     }
-    iconRight={<Tea />}
+    iconRight={<Tea color='text' />}
     color='primary.light'
   />
 )
@@ -61,12 +61,12 @@ export const basicBannerBlockWithURLPropsCTA = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text fontWeight='bold' mr={1}>
+      <Text fontWeight='bold' mr={1} color='text'>
         This is a Heading
       </Text>
     }
     text={
-      <Text>
+      <Text color='text'>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Nunc at lacus vel dolor fringilla rhoncus.
       </Text>
@@ -85,7 +85,7 @@ export const basicBannerBlockWithURLPropsCTA = () => (
         Read More
       </UnderlinedLinkText>
     }
-    iconLeft={<Rowing />}
+    iconLeft={<Rowing color='text' />}
     color='secondary.light'
   />
 )

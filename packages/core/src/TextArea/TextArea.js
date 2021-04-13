@@ -1,5 +1,7 @@
 import styled from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import { space } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import propTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
 
 import {
@@ -45,8 +47,8 @@ TextArea.isField = true
 TextArea.propTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
-  ...borders.propTypes,
-  ...space.propTypes,
+  ...propTypes.border,
+  ...propTypes.space,
 }
 
 export default TextArea

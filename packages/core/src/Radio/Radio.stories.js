@@ -79,15 +79,11 @@ export const _3States = () => (
   </div>
 )
 
-_3States.story = {
-  name: '3 states',
-}
+_3States.storyName = '3 states'
 
 export const _MockForm = () => <MockForm />
 
-_MockForm.story = {
-  name: 'Mock form',
-}
+_MockForm.storyName = 'Mock form'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -105,6 +101,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

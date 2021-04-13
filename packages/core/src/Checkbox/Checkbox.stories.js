@@ -95,9 +95,7 @@ export const CheckboxStates = () => (
   </div>
 )
 
-CheckboxStates.story = {
-  name: 'Checkbox states',
-}
+CheckboxStates.storyName = 'Checkbox states'
 
 export const Color = () => (
   <div>
@@ -160,9 +158,7 @@ export const Color = () => (
   </div>
 )
 
-Color.story = {
-  name: 'color',
-}
+Color.storyName = 'color'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -184,6 +180,4 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'

@@ -98,6 +98,7 @@ lib
 
 # Prettier reformats code blocks inside Markdown, which affects rendered output
 *.md
+!MIGRATION_GUIDES/*.md
 
 # Handlebars templates
 **/*.hbs

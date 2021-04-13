@@ -55,27 +55,4 @@ describe('Tooltip', () => {
     ).toJSON()
     expect(json).toMatchSnapshot()
   })
-
-  describe('deprecated prop types', () => {
-    let consoleError
-    beforeEach(() => {
-      consoleError = console.error
-      console.error = jest.fn()
-    })
-    afterEach(() => (console.error = consoleError))
-
-    test('bg prop warns', () => {
-      rendererCreateWithTheme(
-        <Tooltip bg='blue' top left>
-          left tooltip
-        </Tooltip>
-      ).toJSON()
-      expect(console.error).toHaveBeenCalledWith(
-        'Warning: Failed %s type: %s%s',
-        'prop',
-        'The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.',
-        expect.any(String)
-      )
-    })
-  })
 })

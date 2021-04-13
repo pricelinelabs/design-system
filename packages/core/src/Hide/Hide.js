@@ -46,6 +46,7 @@ const Hide = styled(Box)`
 `
 
 Hide.propTypes = {
+  ...Box.propTypes,
   xs: PropTypes.bool,
   sm: PropTypes.bool,
   md: PropTypes.bool,

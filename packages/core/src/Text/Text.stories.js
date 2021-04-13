@@ -28,9 +28,7 @@ export const FontSize = () => (
   </div>
 )
 
-FontSize.story = {
-  name: 'fontSize',
-}
+FontSize.storyName = 'fontSize'
 
 export const TextAlign = () => (
   <div>
@@ -40,39 +38,15 @@ export const TextAlign = () => (
   </div>
 )
 
-TextAlign.story = {
-  name: 'textAlign',
-}
+TextAlign.storyName = 'textAlign'
 
 export const Regular = () => <Text regular>Hello Regular</Text>
 
-Regular.story = {
-  name: 'regular',
-}
-
 export const Bold = () => <Text bold>Hello Bold</Text>
-
-Bold.story = {
-  name: 'bold',
-}
 
 export const Caps = () => <Text caps>Hello Caps</Text>
 
-Caps.story = {
-  name: 'caps',
-}
-
-export const Italic = () => <Text italic>Hello italic</Text>
-
-Italic.story = {
-  name: 'italic',
-}
-
 export const Strikethrough = () => <Text.s>Hello Strikethrough</Text.s>
-
-Strikethrough.story = {
-  name: 'strikethrough',
-}
 
 export const Margin = () => (
   <Text mt={4} mb={2}>
@@ -80,20 +54,12 @@ export const Margin = () => (
   </Text>
 )
 
-Margin.story = {
-  name: 'margin',
-}
-
 export const Color = () => (
   <div>
     <Text color='blue'>Hello Blue</Text>
     <Text color='green'>Hello Green</Text>
   </div>
 )
-
-Color.story = {
-  name: 'color',
-}
 
 export const MinMaxHeight = () => (
   <div>
@@ -106,9 +72,7 @@ export const MinMaxHeight = () => (
   </div>
 )
 
-MinMaxHeight.story = {
-  name: 'min/maxHeight',
-}
+MinMaxHeight.storyName = 'min/maxHeight'
 
 export const HideOnLgBreakpoints = () => (
   <div>
@@ -144,6 +108,4 @@ export const Paragraph = () => (
   </Text.p>
 )
 
-HideOnLgBreakpoints.story = {
-  name: 'Hide on > lg breakpoints',
-}
+HideOnLgBreakpoints.storyName = 'Hide on > lg breakpoints'

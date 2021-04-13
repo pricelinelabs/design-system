@@ -9,37 +9,37 @@ export default {
 export const _Hide = () => (
   <Flex justifyContent='space-between'>
     <Hide xs sm md lg xl xxl>
-      <Box p={2} bg='warning'>
+      <Box p={2} color='warning'>
         Hide xs
       </Box>
     </Hide>
     <Hide sm md lg xl xxl>
-      <Box p={2} bg='alert'>
+      <Box p={2} color='alert'>
         Hide sm
       </Box>
     </Hide>
     <Hide md lg xl xxl>
-      <Box p={2} bg='success'>
+      <Box p={2} color='success'>
         Hide md
       </Box>
     </Hide>
     <Hide lg xl xxl>
-      <Box p={2} bg='primary'>
+      <Box p={2} color='primary'>
         Hide lg
       </Box>
     </Hide>
     <Hide xl xxl>
-      <Box p={2} bg='promoPrimary'>
+      <Box p={2} color='promoPrimary'>
         Hide xl
       </Box>
     </Hide>
     <Hide xxl>
-      <Box p={2} bg='promoSecondary'>
+      <Box p={2} color='promoSecondary'>
         Hide xxl
       </Box>
     </Hide>
     <Hide print>
-      <Box p={2} bg='caution'>
+      <Box p={2} color='caution'>
         Hide print
       </Box>
     </Hide>

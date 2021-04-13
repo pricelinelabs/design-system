@@ -4,47 +4,31 @@ import { Box, Flex, Text, createTheme } from '..'
 
 const theme = createTheme()
 
-const blacklist = ['darkPurple']
-
-const keys = Object.keys(theme.colors).filter((key) => !blacklist.includes(key))
-
-const next = keys.map((key) => ({ key, value: theme.colors[key] }))
-
-const Chip = (props) => <Box width={1} px={5} py={4} bg={props.color} />
+const Chip = (props) => {
+  return <Box width={1} px={5} py={4} color={props.color} />
+}
 
 const palette = Object.keys(theme.palette).map((key) => ({
   key,
   value: theme.palette[key],
 }))
 
-const ColorCard = (props) => (
-  <Box>
-    <Chip name={props.name} color={props.color} />
-    <Text f={0}>{props.name}</Text>
-    <Text as='pre' m={0}>
-      {props.color}
-    </Text>
-  </Box>
-)
+const ColorCard = (props) => {
+  const colorArgs = props.color.split('.')
+  return (
+    <Box>
+      <Chip name={props.name} color={props.color} />
+      <Text f={0}>{props.name}</Text>
+      <Text as='pre' m={0}>
+        {theme.palette[colorArgs[0]][colorArgs[1]]}
+      </Text>
+    </Box>
+  )
+}
 
 export default {
   title: 'Color',
 }
-
-export const Colors = () => (
-  <div>
-    <Box p={3}>
-      <h1>Colors</h1>
-    </Box>
-    <Flex wrap>
-      {next.map((color) => (
-        <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-          <ColorCard name={color.key} color={color.value} />
-        </Box>
-      ))}
-    </Flex>
-  </div>
-)
 
 export const Palette = () => (
   <div>
@@ -64,10 +48,7 @@ export const Palette = () => (
                       p={3}
                       width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
                     >
-                      <ColorCard
-                        name={key}
-                        color={theme.palette[pal.key][key]}
-                      />
+                      <ColorCard name={key} color={`${pal.key}.${key}`} />
                     </Box>
                   ))}
                 </Flex>
@@ -77,7 +58,7 @@ export const Palette = () => (
           } else {
             return (
               <Box key={pal.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-                <ColorCard name={pal.key} color={pal.value} />
+                <ColorCard name={pal.key} color={`${pal.value}.${pal.key}`} />
               </Box>
             )
           }

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { space } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 
 import Range from './rc-slider/Range'
 import styleSlider from './styleSlider'
@@ -12,7 +12,7 @@ RangeSlider.defaultProps = {
 }
 
 RangeSlider.propTypes = {
-  ...space.propTypes,
+  ...propTypes.space,
   color: PropTypes.string,
 }
 

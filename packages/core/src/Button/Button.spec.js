@@ -463,24 +463,6 @@ describe('Button', () => {
     })
   })
 
-  describe('deprecated props', () => {
-    it('should shim deprecated "fullWidth" prop', () => {
-      console.error = jest.fn()
-
-      expect(() => {
-        const { getByText } = render(<Button fullWidth>BUTTON</Button>)
-
-        expect(getByText('BUTTON')).toHaveStyleRule('width', '100%')
-        expect(console.error).toHaveBeenCalledWith(
-          'Warning: Failed %s type: %s%s',
-          'prop',
-          'The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.',
-          expect.any(String)
-        )
-      }).not.toThrow()
-    })
-  })
-
   // this test detects a current defect that will be fixed properly in DSv4
   it('should not lose base styles on "styled(Button)"', () => {
     const { getByText } = render(<StyledButton>BUTTON</StyledButton>)

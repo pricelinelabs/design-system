@@ -1,382 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner accepts non-preset colors 1`] = `
-.c2 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c3 {
-  font-size: 14px;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #4f6f8f;
-  color: #0a0;
-}
-
-<div
-  className="c0"
-  color="green"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-      width={1}
-    >
-      <span
-        className="c3"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Banner renders content from children props 1`] = `
-.c4 {
+.c0 {
   text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  background-color: #fff;
+  color: #001833;
 }
 
 .c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-      <span>
-        123
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with blue bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0068EF;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with custom iconName and size 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with green bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with header node 1`] = `
-<DocumentFragment>
-  .c5 {
   text-align: left;
   width: 100%;
 }
@@ -415,7 +46,434 @@ exports[`Banner renders with header node 1`] = `
 }
 
 .c1 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+      <span>
+        123
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with alert color 1`] = `
+.c0 {
   text-align: left;
+  background-color: #fff;
+  color: #001833;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #f68013;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M1 21.5h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with custom iconName and size 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #fff;
+  color: #001833;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with error color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #fff;
+  color: #001833;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with error.light color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #800;
+  color: #fff;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #fbebeb;
+  color: #800;
+}
+
+<div
+  className="c0 c1"
+  color="error.dark"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with header node 1`] = `
+<DocumentFragment>
+  .c1 {
+  text-align: left;
+  color: text.lightest;
+}
+
+.c6 {
+  text-align: left;
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
+  font-size: 14px;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c5 {
+  outline: none;
+}
+
+.c2 {
   background-color: secondary.base;
   color: text.lightest;
 }
@@ -434,15 +492,15 @@ exports[`Banner renders with header node 1`] = `
     class="c0"
   >
     <div
-      class="c1"
+      class="c1 c2"
       color="text.lightest"
     >
       <div
-        class="c2"
+        class="c3"
       >
         <svg
           aria-hidden="true"
-          class="c3 c4"
+          class="c4 c5"
           fill="currentcolor"
           focusable="false"
           height="24"
@@ -456,7 +514,7 @@ exports[`Banner renders with header node 1`] = `
           />
         </svg>
         <div
-          class="c5"
+          class="c6"
           width="1"
         >
           <h3
@@ -465,7 +523,7 @@ exports[`Banner renders with header node 1`] = `
             Hello world
           </h3>
           <span
-            class="c6"
+            class="c7"
             font-size="1"
           >
             <div
@@ -481,493 +539,19 @@ exports[`Banner renders with header node 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Banner renders with lightBlue bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #e8f2ff;
-  color: #049;
-}
-
-<div
-  className="c0"
-  color="primary.dark"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with lightGreen bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #ecf7ec;
-  color: #060;
-}
-
-<div
-  className="c0"
-  color="secondary.dark"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with lightRed bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #fbebeb;
-  color: #800;
-}
-
-<div
-  className="c0"
-  color="error.dark"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Banner renders with no props other than theme 1`] = `
-.c4 {
+.c0 {
   text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  background-color: #fff;
+  color: #001833;
 }
 
 .c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with orange bg 1`] = `
-.c4 {
   text-align: left;
   width: 100%;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
 .c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #f68013;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M1 21.5h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with red bg 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #c00;
-  color: #fff;
-}
-
-<div
-  className="c0"
-  color="text.lightest"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
-      />
-    </svg>
-    <div
-      className="c4"
-      width={1}
-    >
-      <span
-        className="c5"
-        fontSize={1}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with text node 1`] = `
-.c4 {
-  text-align: left;
-  width: 100%;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -986,13 +570,7 @@ exports[`Banner renders with text node 1`] = `
   font-size: 14px;
 }
 
-.c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1002,26 +580,25 @@ exports[`Banner renders with text node 1`] = `
   width: 24px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c0 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
+.c1 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
   color="text.lightest"
 >
   <div
-    className="c1"
+    className="c2"
   >
     <svg
       aria-hidden={true}
-      className="c2 c3"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -1035,16 +612,446 @@ exports[`Banner renders with text node 1`] = `
       />
     </svg>
     <div
-      className="c4"
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with primary color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #fff;
+  color: #001833;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #0068EF;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with primary.light color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #049;
+  color: #fff;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #e8f2ff;
+  color: #049;
+}
+
+<div
+  className="c0 c1"
+  color="primary.dark"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with secondary color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #fff;
+  color: #001833;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with secondary.light color 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #060;
+  color: #fff;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: #ecf7ec;
+  color: #060;
+}
+
+<div
+  className="c0 c1"
+  color="secondary.dark"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+      />
+    </svg>
+    <div
+      className="c5"
+      width={1}
+    >
+      <span
+        className="c6"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with text node 1`] = `
+.c0 {
+  text-align: left;
+  color: text.lightest;
+}
+
+.c5 {
+  text-align: left;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c7 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c1 {
+  background-color: secondary.base;
+  color: text.lightest;
+}
+
+<div
+  className="c0 c1"
+  color="text.lightest"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      aria-hidden={true}
+      className="c3 c4"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+      />
+    </svg>
+    <div
+      className="c5"
       width={1}
     >
       <div
-        className="c5"
+        className="c6"
       >
         Header
       </div>
       <span
-        className="c6"
+        className="c7"
         fontSize={1}
       >
         <div
@@ -1059,12 +1066,17 @@ exports[`Banner renders with text node 1`] = `
 `;
 
 exports[`Banner renders with text string 1`] = `
-.c4 {
+.c0 {
+  text-align: left;
+  color: text.lightest;
+}
+
+.c5 {
   text-align: left;
   width: 100%;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1080,16 +1092,16 @@ exports[`Banner renders with text string 1`] = `
 }
 
 .c6 {
-  font-size: 14px;
-}
-
-.c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
 }
 
-.c2 {
+.c7 {
+  font-size: 14px;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1099,26 +1111,25 @@ exports[`Banner renders with text string 1`] = `
   width: 24px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c0 {
-  text-align: left;
+.c1 {
   background-color: secondary.base;
   color: text.lightest;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
   color="text.lightest"
 >
   <div
-    className="c1"
+    className="c2"
   >
     <svg
       aria-hidden={true}
-      className="c2 c3"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -1132,16 +1143,16 @@ exports[`Banner renders with text string 1`] = `
       />
     </svg>
     <div
-      className="c4"
+      className="c5"
       width={1}
     >
       <div
-        className="c5"
+        className="c6"
       >
         Header
       </div>
       <span
-        className="c6"
+        className="c7"
         fontSize={1}
       >
         Text

@@ -22,9 +22,9 @@ exports[`FormField renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 12px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -74,6 +74,10 @@ exports[`FormField renders 1`] = `
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
+}
+
+@media screen and (min-width:32em) {
+
 }
 
 @media screen and (min-width:40em) {
@@ -131,6 +135,10 @@ exports[`FormField renders 1`] = `
 `;
 
 exports[`FormField renders with Icon 1`] = `
+.c2 {
+  margin-right: -40px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -142,15 +150,14 @@ exports[`FormField renders with Icon 1`] = `
   align-items: center;
 }
 
-.c2 {
-  margin-right: -40px;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -160,7 +167,7 @@ exports[`FormField renders with Icon 1`] = `
   width: 24px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
@@ -174,14 +181,14 @@ exports[`FormField renders with Icon 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
 
-.c5 {
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -203,34 +210,38 @@ exports[`FormField renders with Icon 1`] = `
   font-size: 16px;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #4f6f8f;
 }
 
-.c5::-ms-clear {
+.c6::-ms-clear {
   display: none;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
@@ -260,12 +271,12 @@ exports[`FormField renders with Icon 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
       data-testid="icon-field-prefix-icons"
     >
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}
@@ -280,7 +291,7 @@ exports[`FormField renders with Icon 1`] = `
       </svg>
     </div>
     <input
-      className="c5"
+      className="c6"
       fontSize={
         Array [
           2,
@@ -304,6 +315,10 @@ exports[`FormField renders with Icon 1`] = `
 `;
 
 exports[`FormField renders with Label autoHide prop 1`] = `
+.c2 {
+  margin-right: -40px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -315,15 +330,14 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   align-items: center;
 }
 
-.c2 {
-  margin-right: -40px;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -333,7 +347,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   width: 24px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
@@ -347,14 +361,14 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
 
-.c5 {
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -376,34 +390,38 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   font-size: 16px;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #4f6f8f;
 }
 
-.c5::-ms-clear {
+.c6::-ms-clear {
   display: none;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
@@ -433,12 +451,12 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
       data-testid="icon-field-prefix-icons"
     >
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}
@@ -453,7 +471,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       </svg>
     </div>
     <input
-      className="c5"
+      className="c6"
       fontSize={
         Array [
           2,
@@ -477,19 +495,11 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   width: 100%;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -510,6 +520,10 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
 }
 
+.c5 {
+  outline: none;
+}
+
 .c0 {
   font-size: 10px;
   -webkit-letter-spacing: 0.2px;
@@ -520,15 +534,14 @@ exports[`FormField renders with Select  1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 12px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
 
-.c5 {
-  outline: none;
+.c6 {
   pointer-events: none;
 }
 
@@ -545,11 +558,11 @@ exports[`FormField renders with Select  1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  padding-left: 12px;
+  padding-right: 32px;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 32px;
   font-size: 16px;
 }
 
@@ -561,6 +574,10 @@ exports[`FormField renders with Select  1`] = `
 
 .c3::-ms-expand {
   display: none;
+}
+
+@media screen and (min-width:32em) {
+
 }
 
 @media screen and (min-width:40em) {
@@ -593,7 +610,7 @@ exports[`FormField renders with Select  1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c1"
       width={1}
     >
       <select
@@ -616,7 +633,7 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c4 c5"
+        className="c4 c5 c6"
         color="text.light"
         fill="currentcolor"
         focusable={false}
@@ -636,6 +653,14 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
+.c2 {
+  margin-right: -40px;
+}
+
+.c6 {
+  width: 100%;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -647,27 +672,14 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c2 {
-  margin-right: -40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -677,7 +689,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -687,7 +699,11 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c4 {
+.c9 {
+  outline: none;
+}
+
+.c5 {
   outline: none;
 }
 
@@ -701,19 +717,18 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
 
-.c8 {
-  outline: none;
+.c10 {
   pointer-events: none;
 }
 
-.c6 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -726,26 +741,30 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  padding-left: 40px;
+  padding-right: 32px;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 40px;
-  padding-right: 32px;
   font-size: 16px;
 }
 
-.c6:focus {
+.c7:focus {
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
 }
 
-.c6::-ms-expand {
+.c7::-ms-expand {
   display: none;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
-  .c6 {
+  .c7 {
     font-size: 14px;
   }
 }
@@ -774,12 +793,12 @@ exports[`FormField renders with Select and Icon 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="c2 c3"
       data-testid="icon-field-prefix-icons"
     >
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}
@@ -794,11 +813,11 @@ exports[`FormField renders with Select and Icon 1`] = `
       </svg>
     </div>
     <div
-      className="c5"
+      className="c6 c1"
       width={1}
     >
       <select
-        className="c6"
+        className="c7"
         fontSize={
           Array [
             2,
@@ -817,7 +836,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c7 c8"
+        className="c8 c9 c10"
         color="text.light"
         fill="currentcolor"
         focusable={false}

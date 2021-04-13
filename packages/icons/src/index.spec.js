@@ -10,7 +10,7 @@ const iconList = Object.keys(icons)
   .map((key) => [key, icons[key]])
 
 test.each(iconList)('renders %s', (key, Component) => {
-  const { asFragment }= render(<Component />)
+  const { asFragment } = render(<Component />)
   expect(asFragment()).toMatchSnapshot()
 })
 
@@ -116,11 +116,11 @@ describe('pcln-icons', () => {
     test.each(iconList)(
       '%s Icon should render with no outline ',
       (key, Component) => {
-        const { container } = render(
+        const { getAllByTitle } = render(
           <Component data-testid={key} title={key} />
         )
 
-        expect(container.firstChild).toHaveStyleRule('outline', undefined)
+        expect(getAllByTitle(key)[0]).toHaveStyleRule('outline', 'none')
       }
     )
   })

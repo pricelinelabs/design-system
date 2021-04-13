@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Flex, CloseButton, deprecatedPropType, Text } from 'pcln-design-system'
+import { Flex, CloseButton, Text } from 'pcln-design-system'
 
 const HeaderWrapper = styled(Flex)`
   height: 40px;
@@ -25,14 +25,8 @@ const StyledCloseButton = styled(CloseButton)`
   }
 `
 
-const ModalHeader = ({ bg, color, onClose, title }) => (
-  <HeaderWrapper
-    align='center'
-    alignItems='center'
-    color={color}
-    bg={bg}
-    px={3}
-  >
+const ModalHeader = ({ color, onClose, title }) => (
+  <HeaderWrapper align='center' alignItems='center' color={color} px={3}>
     {title && (
       <Title fontSize={1} bold>
         {title}
@@ -45,15 +39,13 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
 ModalHeader.displayName = ModalHeader
 
 ModalHeader.propTypes = {
-  bg: deprecatedPropType('color'),
-  onClose: PropTypes.func,
   color: PropTypes.string,
+  onClose: PropTypes.func,
   title: PropTypes.string,
 }
 
 ModalHeader.defaultProps = {
-  bg: 'blue',
-  color: 'white',
+  color: 'primary',
 }
 
 export default ModalHeader

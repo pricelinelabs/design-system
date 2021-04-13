@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconButton renders without props 1`] = `
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,7 +9,7 @@ exports[`IconButton renders without props 1`] = `
   width: 24px;
 }
 
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -31,9 +31,6 @@ exports[`IconButton renders without props 1`] = `
   padding: 9.5px 18px;
   background-color: #0068EF;
   color: #fff;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
 }
 
 .c0:hover {
@@ -52,31 +49,37 @@ exports[`IconButton renders without props 1`] = `
   background-color: #edf0f3;
 }
 
-.c0:hover {
+.c1 {
+  padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c0 > div {
+.c1:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.c1 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
 }
 
 <button
-  className="c0"
+  className="c0 c1"
   color="primary"
   size="medium"
 >
   <div>
     <svg
       aria-hidden={true}
-      className="c1 c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}

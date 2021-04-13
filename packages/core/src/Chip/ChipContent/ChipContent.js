@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
 import { ArrowRight } from 'pcln-icons'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 import { getPaletteColor } from '../../utils'
 import { Flex } from '../../Flex'
@@ -65,8 +66,8 @@ const ChipContent = ({
 ChipContent.displayName = 'Chip'
 
 ChipContent.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   id: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,

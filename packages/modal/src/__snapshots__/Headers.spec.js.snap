@@ -1,7 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader render 1`] = `
-.c5 {
+.c1 {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,11 +32,11 @@ exports[`ModalHeader render 1`] = `
   width: 24px;
 }
 
-.c6 {
+.c10 {
   outline: none;
 }
 
-.c3 {
+.c6 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -30,40 +53,43 @@ exports[`ModalHeader render 1`] = `
   background-color: #0068EF;
   color: #fff;
   margin-left: auto;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
 }
 
-.c3:hover {
+.c6:hover {
   background-color: #049;
   color: #fff;
 }
 
-.c3:focus {
+.c6:focus {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
 }
 
-.c3:disabled {
+.c6:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
 }
 
-.c3:hover {
+.c7 {
+  padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c3 > div {
+.c7:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.c7 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c3:disabled {
+.c7:disabled {
   background-color: transparent;
 }
 
@@ -77,25 +103,11 @@ exports[`ModalHeader render 1`] = `
   box-sizing: border-box;
 }
 
-.c1 {
-  padding-left: 16px;
-  padding-right: 16px;
-  background-color: #0a0;
-  color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c3 {
   height: 40px;
 }
 
-.c2 {
-  font-weight: 700;
-  font-size: 14px;
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -106,16 +118,16 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c8 {
   height: 24px;
   width: 24px;
 }
 
-.c4 svg {
+.c8 svg {
   vertical-align: top;
 }
 
-.c4:focus {
+.c8:focus {
   background-color: #049;
   outline: none;
 }
@@ -125,18 +137,18 @@ exports[`ModalHeader render 1`] = `
     class="c0"
   >
     <div
-      class="c1"
-      color="white"
+      class="c1 c2 c3"
+      color="secondary"
     >
       <div
-        class="c2"
+        class="c4 c5"
         font-size="1"
       >
         test
       </div>
       <button
         aria-label="close"
-        class="c3 c4"
+        class="c6 c7 c8"
         color="primary"
         size="24"
         title="close"
@@ -144,7 +156,7 @@ exports[`ModalHeader render 1`] = `
         <div>
           <svg
             aria-hidden="true"
-            class="c5 c6"
+            class="c9 c10"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -165,6 +177,11 @@ exports[`ModalHeader render 1`] = `
 `;
 
 exports[`SmallModalHeader render 1`] = `
+.c1 {
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -175,8 +192,7 @@ exports[`SmallModalHeader render 1`] = `
   box-sizing: border-box;
 }
 
-.c1 {
-  background-color: #0a0;
+.c2 {
   height: 8px;
 }
 
@@ -185,7 +201,8 @@ exports[`SmallModalHeader render 1`] = `
     class="c0"
   >
     <div
-      class="c1"
+      class="c1 c2"
+      color="secondary"
     />
   </div>
 </div>

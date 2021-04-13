@@ -4,7 +4,7 @@ import { ModalHeader, SmallModalHeader } from './index'
 
 describe('SmallModalHeader', () => {
   test('render', () => {
-    const { container } = render(<SmallModalHeader bg='secondary' />)
+    const { container } = render(<SmallModalHeader color='secondary' />)
     expect(container).toMatchSnapshot()
   })
 })
@@ -13,7 +13,7 @@ describe('ModalHeader', () => {
   test('render', () => {
     const { container } = render(
       <ModalHeader
-        bg='secondary'
+        color='secondary'
         title='test'
         onClose={() => {
           console.log('close')

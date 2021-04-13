@@ -2,18 +2,20 @@
 
 exports[`Tooltip bottom center 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #fff;
   text-align: center;
   top: 0;
   left: 50%;
@@ -23,7 +25,7 @@ exports[`Tooltip bottom center 1`] = `
   transform: translateX(-50%);
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -58,7 +60,7 @@ exports[`Tooltip bottom center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     centered tooltip
@@ -68,23 +70,25 @@ exports[`Tooltip bottom center 1`] = `
 
 exports[`Tooltip bottom left 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #fff;
   text-align: center;
   top: 0;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -119,7 +123,7 @@ exports[`Tooltip bottom left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     left tooltip
@@ -129,24 +133,26 @@ exports[`Tooltip bottom left 1`] = `
 
 exports[`Tooltip bottom right 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #fff;
   text-align: center;
   top: 0;
   right: 0;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -181,7 +187,7 @@ exports[`Tooltip bottom right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     right tooltip
@@ -191,23 +197,25 @@ exports[`Tooltip bottom right 1`] = `
 
 exports[`Tooltip renders 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #fff;
   text-align: center;
   top: 0;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -242,7 +250,7 @@ exports[`Tooltip renders 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     A Tooltip
@@ -252,18 +260,20 @@ exports[`Tooltip renders 1`] = `
 
 exports[`Tooltip top center 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #0068EF;
   color: #fff;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #0068EF;
   text-align: center;
   bottom: -8px;
   left: 50%;
@@ -273,7 +283,7 @@ exports[`Tooltip top center 1`] = `
   transform: translateX(-50%);
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -308,7 +318,7 @@ exports[`Tooltip top center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="primary"
   >
     centered tooltip
@@ -318,23 +328,25 @@ exports[`Tooltip top center 1`] = `
 
 exports[`Tooltip top left 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #0068EF;
   color: #fff;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #0068EF;
   text-align: center;
   bottom: -8px;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -369,7 +381,7 @@ exports[`Tooltip top left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="primary"
   >
     left tooltip
@@ -379,24 +391,26 @@ exports[`Tooltip top left 1`] = `
 
 exports[`Tooltip top right 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #c00;
   color: #fff;
+}
+
+.c1 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #c00;
   text-align: center;
   bottom: -8px;
   right: 0;
 }
 
-.c0::after {
+.c1::after {
   content: '';
   position: absolute;
   width: 0;
@@ -431,7 +445,7 @@ exports[`Tooltip top right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="error"
   >
     right tooltip

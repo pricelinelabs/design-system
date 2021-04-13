@@ -11,6 +11,14 @@ exports[`Modal renders when enable overflow and disable close button 1`] = `
   box-sizing: border-box;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+
+}
+
 <div
   class="c0"
 />
@@ -25,6 +33,14 @@ exports[`Modal renders when open 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+
 }
 
 <div

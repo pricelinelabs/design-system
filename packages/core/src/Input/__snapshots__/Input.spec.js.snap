@@ -48,6 +48,10 @@ exports[`Input it renders 1`] = `
   box-shadow: 0 0 0 2px #0068EF;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
   .c0 {
     font-size: 14px;
@@ -86,8 +90,8 @@ exports[`Input it renders an input element with a really large padding and margi
   padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
-  margin: 32px;
   padding: 32px;
+  margin: 32px;
   font-size: 16px;
 }
 
@@ -115,6 +119,10 @@ exports[`Input it renders an input element with a really large padding and margi
   outline: 0;
   border-color: #0068EF;
   box-shadow: 0 0 0 2px #0068EF;
+}
+
+@media screen and (min-width:32em) {
+
 }
 
 @media screen and (min-width:40em) {
@@ -182,6 +190,10 @@ exports[`Input it renders an input element with a red border with a color prop i
   outline: 0;
   border-color: #c00;
   box-shadow: 0 0 0 2px #c00;
+}
+
+@media screen and (min-width:32em) {
+
 }
 
 @media screen and (min-width:40em) {

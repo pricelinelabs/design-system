@@ -34,72 +34,46 @@ export default {
   },
 }
 
-export const BadgeComponent = () => <Badge bg='lightGray'>badge</Badge>
+export const BadgeComponent = () => (
+  <Badge color='background.light'>badge</Badge>
+)
 
 export const Default = () => <Badge>default</Badge>
 
-Default.story = {
-  name: 'default',
-}
+Default.storyName = 'default'
 
-export const Blue = () => <Badge bg='blue'>blue</Badge>
+export const Primary = () => <Badge color='primary'>primary</Badge>
 
-Blue.story = {
-  name: 'blue',
-}
+Primary.storyName = 'primary'
 
-export const LightBlue = () => <Badge bg='lightBlue'>lightBlue</Badge>
-
-LightBlue.story = {
-  name: 'lightBlue',
-}
-
-export const Green = () => <Badge bg='green'>green</Badge>
-
-Green.story = {
-  name: 'green',
-}
-
-export const LightGreen = () => <Badge bg='lightGreen'>lightGreen</Badge>
-
-LightGreen.story = {
-  name: 'lightGreen',
-}
-
-export const Red = () => <Badge bg='red'>red</Badge>
-
-Red.story = {
-  name: 'red',
-}
-
-export const LightRed = () => <Badge bg='lightRed'>lightRed</Badge>
-
-LightRed.story = {
-  name: 'lightRed',
-}
-
-export const Orange = () => <Badge bg='orange'>orange</Badge>
-
-Orange.story = {
-  name: 'orange',
-}
-
-export const TextCustom = () => (
-  <Badge bg='text' color='white'>
-    text (custom)
-  </Badge>
+export const PrimaryLight = () => (
+  <Badge color='primary.light'>primary.light</Badge>
 )
 
-TextCustom.story = {
-  name: 'text (custom)',
-}
+PrimaryLight.storyName = 'primary.light'
 
-export const LightBlueAndTextCustom = () => (
-  <Badge bg='lightBlue' color='text'>
-    lightBlue and text (custom)
-  </Badge>
+export const Secondary = () => <Badge color='secondary'>secondary</Badge>
+
+Secondary.storyName = 'secondary'
+
+export const SecondaryLight = () => (
+  <Badge color='secondary.light'>secondary.light</Badge>
 )
 
-LightBlueAndTextCustom.story = {
-  name: 'lightBlue and text (custom)',
-}
+SecondaryLight.storyName = 'secondary.light'
+
+export const Error = () => <Badge color='error'>error</Badge>
+
+Error.storyName = 'error'
+
+export const ErrorLight = () => <Badge color='error.light'>error.light</Badge>
+
+ErrorLight.storyName = 'error.light'
+
+export const Alert = () => <Badge color='alert'>alert</Badge>
+
+Alert.storyName = 'alert'
+
+export const Text = () => <Badge color='text'>text</Badge>
+
+Text.storyName = 'text'

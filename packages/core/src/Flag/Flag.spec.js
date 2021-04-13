@@ -1,4 +1,5 @@
 import React from 'react'
+import { render } from 'testing-library'
 
 import { Flag, theme } from '..'
 
@@ -21,20 +22,14 @@ describe('Flag', () => {
     expect(json).toHaveStyleRule('width', '256px')
   })
 
-  test('renders with hex value as bg color', () => {
-    const json = rendererCreateWithTheme(
-      <Flag width={256} bg='#085397' />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json.children[1]).toHaveStyleRule('background-color', '#085397')
-  })
-
-  test('renders with theme color as bg color', () => {
-    const json = rendererCreateWithTheme(
-      <Flag width={256} bg='purple' />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json.children[1]).toHaveStyleRule(
+  test('renders with palette color as color prop', () => {
+    const text = 'bla'
+    const { getByText } = render(
+      <Flag width={256} color='promoPrimary.base'>
+        {text}
+      </Flag>
+    )
+    expect(getByText(text)).toHaveStyleRule(
       'background-color',
       theme.colors.purple
     )

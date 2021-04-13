@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { alignItems, fontSize, justifyContent } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import PropTypes from 'prop-types'
 import { Banner } from '../Banner'
 import { Box } from '../Box'
@@ -58,7 +59,11 @@ const GenericBanner = ({
       {URLProps && (
         <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />
       )}
-      <BannerWithRadius {...props} onClick={URLProps ? null : buttonClick}>
+      <BannerWithRadius
+        {...props}
+        onClick={URLProps ? null : buttonClick}
+        showIcon={false}
+      >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
@@ -114,9 +119,8 @@ const GenericBanner = ({
 }
 
 GenericBanner.propTypes = {
-  ...alignItems.propTypes,
-  ...justifyContent.propTypes,
-  ...fontSize.propTypes,
+  ...pick(propTypes.flexbox, ['alignItems', 'justifyContent']),
+  ...pick(propTypes.typography, ['fontSize']),
   buttonClick: PropTypes.func,
   buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
   buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),

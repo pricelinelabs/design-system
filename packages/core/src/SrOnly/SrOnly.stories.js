@@ -22,6 +22,5 @@ export const ScreenreaderDescriptionOfContent = () => (
   </Box>
 )
 
-ScreenreaderDescriptionOfContent.story = {
-  name: 'Screenreader description of content',
-}
+ScreenreaderDescriptionOfContent.storyName =
+  'Screenreader description of content'

@@ -34,9 +34,7 @@ export const LinkComponent = () => (
   </Link>
 )
 
-LinkComponent.story = {
-  name: 'Link component',
-}
+LinkComponent.storyName = 'Link component'
 
 export const AsSmallFilledButton = () => (
   <>
@@ -57,9 +55,7 @@ export const LinkOpenSelf = () => (
   </Link>
 )
 
-LinkOpenSelf.story = {
-  name: 'Link open self',
-}
+LinkOpenSelf.storyName = 'Link open self'
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -81,9 +77,7 @@ export const ForwardRefs = () => (
   />
 )
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
+ForwardRefs.storyName = 'Forward refs'
 
 export const Color = () => (
   <div>

@@ -1,5 +1,4 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import {
   display,
@@ -15,13 +14,14 @@ import {
   space,
   textAlign,
   textStyle,
-  themeGet,
   width,
   zIndex,
 } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 
 import {
-  deprecatedPropType,
   deprecatedColorValue,
   applyVariations,
   getPaletteColor,
@@ -48,16 +48,9 @@ export const textShadow = (props) => {
     : null
 }
 
-const Text = styled.div.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
+const textProps = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
-  ${(props) =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
 
   ${display}
   ${height}
@@ -82,25 +75,46 @@ const Text = styled.div.attrs(({ align, ...props }) => ({
   ${zIndex}
 `
 
+const Text = styled.div.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+const Span = styled.span.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
+const Paragraph = styled.p.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
+const Strike = styled.s.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
 Text.displayName = 'Text'
 
 Text.propTypes = {
-  ...display.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...height.propTypes,
-  ...lineHeight.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
-  ...overflow.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textStyle.propTypes,
-  ...width.propTypes,
-  ...zIndex.propTypes,
-  align: deprecatedPropType('textAlign'),
+  ...propTypes.layout,
+  ...pick(propTypes.typography, [
+    'fontSize',
+    'fontWeight',
+    'lineHeight',
+    'textAlign',
+    'textStyle',
+  ]),
+  ...pick(propTypes.position, ['zIndex']),
+  ...propTypes.space,
   bold: PropTypes.bool,
   caps: PropTypes.bool,
   color: deprecatedColorValue(),
@@ -109,25 +123,13 @@ Text.propTypes = {
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
 }
 
-Text.span = ({ children, ...props }) => (
-  <Text as='span' {...props}>
-    {children}
-  </Text>
-)
+Text.span = Span
 Text.span.displayName = 'Text.span'
 
-Text.p = ({ children, ...props }) => (
-  <Text as='p' {...props}>
-    {children}
-  </Text>
-)
+Text.p = Paragraph
 Text.p.displayName = 'Text.p'
 
-Text.s = ({ children, ...props }) => (
-  <Text as='s' {...props}>
-    {children}
-  </Text>
-)
-Text.s.displayName = 'Text.s'
+Text.s = Strike
+Text.s.displayName = 'Text.strike'
 
 export default Text

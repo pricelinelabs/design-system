@@ -1,25 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders default 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c3 {
-  outline: none;
-}
-
 .c1 {
   min-width: 40px;
   width: 40px;
@@ -27,6 +8,28 @@ exports[`Avatar renders default 1`] = `
   padding: 8px;
   background-color: #0068EF;
   color: #fff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -49,14 +52,14 @@ exports[`Avatar renders default 1`] = `
 >
   <div
     alt="avatar"
-    className="c1"
+    className="c1 c2"
     color="primary"
     role="img"
     size={40}
   >
     <svg
       aria-hidden={true}
-      className="c2 c3"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -74,17 +77,6 @@ exports[`Avatar renders default 1`] = `
 `;
 
 exports[`Avatar renders initials 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
-  font-size: 14px;
-}
-
 .c1 {
   min-width: 40px;
   width: 40px;
@@ -92,6 +84,20 @@ exports[`Avatar renders initials 1`] = `
   padding: 8px;
   background-color: #0068EF;
   color: #fff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  font-size: 14px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,13 +120,13 @@ exports[`Avatar renders initials 1`] = `
 >
   <div
     alt="avatar"
-    className="c1"
+    className="c1 c2"
     color="primary"
     role="img"
     size={40}
   >
     <div
-      className="c2"
+      className="c3"
       fontSize={1}
     >
       WS
@@ -131,15 +137,27 @@ exports[`Avatar renders initials 1`] = `
 
 exports[`Avatar renders mr elon 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c2 {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: #0068EF;
+  color: #fff;
+}
+
+.c4 {
+  margin-left: 16px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c3 {
-  margin-left: 16px;
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -153,22 +171,16 @@ exports[`Avatar renders mr elon 1`] = `
   flex-direction: column;
 }
 
-.c4 {
+.c6 {
   margin: 0;
 }
 
-.c5 {
+.c7 {
   color: #4f6f8f;
   font-size: 12px;
 }
 
-.c2 {
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  background-color: #0068EF;
-  color: #fff;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -204,22 +216,22 @@ exports[`Avatar renders mr elon 1`] = `
     >
       <div
         alt="papa-elon"
-        class="c2"
+        class="c2 c3"
         color="primary"
         role="img"
         size="40"
         src="https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg"
       />
       <div
-        class="c3"
+        class="c4 c5"
       >
         <h5
-          class="c4"
+          class="c6"
         >
           Not Elon Musk
         </h5>
         <div
-          class="c5"
+          class="c7"
           color="text.light"
           font-size="0"
         >
